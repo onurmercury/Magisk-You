@@ -120,7 +120,7 @@
                         android:textAllCaps="false"
                         android:textAppearance="@style/AppearanceFoundation.Tiny"
                         android:textColor="@color/color_state_primary_transient"
-                        app:icon="@drawable/ic_notifications_md2"
+                        app:icon="@drawable/ic_notifications"
                         app:iconTint="@color/color_state_primary_transient"
                         app:tint="@color/color_state_primary_transient" />
 
@@ -144,7 +144,7 @@
                         android:textAllCaps="false"
                         android:textAppearance="@style/AppearanceFoundation.Tiny"
                         android:textColor="@color/color_state_primary_transient"
-                        app:icon="@drawable/ic_bug_md2"
+                        app:icon="@drawable/ic_bug"
                         app:iconTint="@color/color_state_primary_transient"
                         app:tint="@color/color_state_primary_transient" />
 
@@ -167,7 +167,7 @@
                         android:textAllCaps="false"
                         android:textColor="?colorError"
                         android:textSize="12sp"
-                        app:icon="@drawable/ic_delete_md2"
+                        app:icon="@drawable/ic_delete"
                         app:iconTint="?colorError"
                         app:rippleColor="?colorError" />
 
