@@ -9,7 +9,7 @@
     ## Inheritance
 
     You might want to inherit default values from "base" theme. You can do so implicitly by just
-    writing `<style name="ThemeFoundationMD2.MySuperAwesomeTheme" parent="ThemeFoundationMD2.Piplup">`.
+    writing `<style name="ThemeFoundation.MySuperAwesomeTheme" parent="ThemeFoundation.Piplup">`.
     With this approach you can only change values you (don't) like - such as `colorPrimary` or
     `colorSecondary`.
 
@@ -38,11 +38,11 @@
     !! notice. In repeated attempts to push such themes you will be automatically blacklisted.
     -->
 
-    <style name="ThemeFoundationMD2" parent="Foundation.Default" />
+    <style name="ThemeFoundation" parent="Foundation.Default" />
 
     <!--1st party themes-->
 
-    <style name="ThemeFoundationMD2.Piplup">
+    <style name="ThemeFoundation.Piplup">
         <item name="colorPrimary">#4EAFF5</item>
         <item name="colorPrimaryVariant">#804EAFF5</item>
         <item name="colorSecondary">#3E78AF</item>
@@ -62,7 +62,7 @@
         <item name="colorDisabledVariant">#66808080</item>
     </style>
 
-    <style name="ThemeFoundationMD2.Amoled" parent="ThemeFoundationMD2.Piplup">
+    <style name="ThemeFoundation.Amoled" parent="ThemeFoundation.Piplup">
         <item name="colorSurface">#FFF</item>
         <item name="colorOnPrimary">#FFF</item>
         <item name="colorOnSecondary">#FFF</item>
@@ -70,26 +70,26 @@
         <item name="colorOnError">#FFF</item>
     </style>
 
-    <style name="ThemeFoundationMD2.Rayquaza" parent="ThemeFoundationMD2.Piplup">
+    <style name="ThemeFoundation.Rayquaza" parent="ThemeFoundation.Piplup">
         <item name="colorPrimary">#68A17F</item>
         <item name="colorPrimaryVariant">#8068A17F</item>
         <item name="colorSecondary">#2F6D43</item>
         <item name="colorSecondaryVariant">#802F6D43</item>
     </style>
 
-    <style name="ThemeFoundationMD2.Zapdos.Base" parent="ThemeFoundationMD2.Piplup">
+    <style name="ThemeFoundation.Zapdos.Base" parent="ThemeFoundation.Piplup">
         <item name="colorSecondary">#B29667</item>
         <item name="colorSecondaryVariant">#80B29667</item>
         <item name="colorOnPrimary">#000000</item>
         <item name="colorOnPrimaryVariant">#D9222222</item>
     </style>
 
-    <style name="ThemeFoundationMD2.Zapdos" parent="ThemeFoundationMD2.Zapdos.Base">
+    <style name="ThemeFoundation.Zapdos" parent="ThemeFoundation.Zapdos.Base">
         <item name="colorPrimary">#F2B90D</item>
         <item name="colorPrimaryVariant">#80F2B90D</item>
     </style>
 
-    <style name="ThemeFoundationMD2.Charmeleon" parent="ThemeFoundationMD2.Piplup">
+    <style name="ThemeFoundation.Charmeleon" parent="ThemeFoundation.Piplup">
         <item name="colorPrimary">#DB7366</item>
         <item name="colorPrimaryVariant">#80DB7366</item>
         <item name="colorSecondary">#B65247</item>
@@ -98,19 +98,19 @@
         <item name="colorOnPrimaryVariant">#D9222222</item>
     </style>
 
-    <style name="ThemeFoundationMD2.Mew.Base" parent="ThemeFoundationMD2.Piplup">
+    <style name="ThemeFoundation.Mew.Base" parent="ThemeFoundation.Piplup">
         <item name="colorSecondary">#B5889B</item>
         <item name="colorSecondaryVariant">#80B5889B</item>
     </style>
 
-    <style name="ThemeFoundationMD2.Mew" parent="ThemeFoundationMD2.Mew.Base">
+    <style name="ThemeFoundation.Mew" parent="ThemeFoundation.Mew.Base">
         <item name="colorPrimary">#B3566C</item>
         <item name="colorPrimaryVariant">#80B3566C</item>
         <item name="colorOnPrimary">#F9F9F9</item>
         <item name="colorOnPrimaryVariant">#D9E6E6E6</item>
     </style>
 
-    <style name="ThemeFoundationMD2.Salamence" parent="ThemeFoundationMD2.Piplup">
+    <style name="ThemeFoundation.Salamence" parent="ThemeFoundation.Piplup">
         <item name="colorPrimary">#70B2C6</item>
         <item name="colorPrimaryVariant">#8070B2C6</item>
         <item name="colorSecondary">#C06A75</item>
@@ -119,7 +119,7 @@
         <item name="colorOnPrimaryVariant">#D9222222</item>
     </style>
 
-    <style name="ThemeFoundationMD2.Fraxure" parent="ThemeFoundationMD2.Amoled">
+    <style name="ThemeFoundation.Fraxure" parent="ThemeFoundation.Amoled">
         <item name="colorPrimary">#009688</item>
         <item name="colorPrimaryVariant">#8000796B</item>
         <item name="colorSecondary">?colorError</item>
