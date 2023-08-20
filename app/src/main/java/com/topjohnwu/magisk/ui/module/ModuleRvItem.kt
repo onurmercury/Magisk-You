@@ -21,7 +21,7 @@ class LocalModuleRvItem(
     override val item: LocalModule
 ) : ObservableRvItem(), DiffItem<LocalModuleRvItem>, ItemWrapper<LocalModule> {
 
-    override val layoutRes = R.layout.item_module_md2
+    override val layoutRes = R.layout.item_module
 
     val showNotice: Boolean
     val noticeText: TextHolder

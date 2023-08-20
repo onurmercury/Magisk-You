@@ -10,35 +10,35 @@ enum class Theme(
 
     Piplup(
         themeName = "Piplup",
-        themeRes = R.style.ThemeFoundationMD2_Piplup
+        themeRes = R.style.ThemeFoundation_Piplup
     ),
     PiplupAmoled(
         themeName = "AMOLED",
-        themeRes = R.style.ThemeFoundationMD2_Amoled
+        themeRes = R.style.ThemeFoundation_Amoled
     ),
     Rayquaza(
         themeName = "Rayquaza",
-        themeRes = R.style.ThemeFoundationMD2_Rayquaza
+        themeRes = R.style.ThemeFoundation_Rayquaza
     ),
     Zapdos(
         themeName = "Zapdos",
-        themeRes = R.style.ThemeFoundationMD2_Zapdos
+        themeRes = R.style.ThemeFoundation_Zapdos
     ),
     Charmeleon(
         themeName = "Charmeleon",
-        themeRes = R.style.ThemeFoundationMD2_Charmeleon
+        themeRes = R.style.ThemeFoundation_Charmeleon
     ),
     Mew(
         themeName = "Mew",
-        themeRes = R.style.ThemeFoundationMD2_Mew
+        themeRes = R.style.ThemeFoundation_Mew
     ),
     Salamence(
         themeName = "Salamence",
-        themeRes = R.style.ThemeFoundationMD2_Salamence
+        themeRes = R.style.ThemeFoundation_Salamence
     ),
     Fraxure(
         themeName = "Fraxure (Legacy)",
-        themeRes = R.style.ThemeFoundationMD2_Fraxure
+        themeRes = R.style.ThemeFoundation_Fraxure
     );
 
     val isSelected get() = Config.themeOrdinal == ordinal

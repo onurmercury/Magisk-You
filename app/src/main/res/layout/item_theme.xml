@@ -175,7 +175,7 @@
             android:layout_gravity="end|top"
             android:layout_margin="@dimen/l_50"
             android:background="@drawable/bg_selection_circle_green"
-            app:srcCompat="@drawable/ic_check_md2"
+            app:srcCompat="@drawable/ic_check"
             app:tint="#fff" />
 
     </com.google.android.material.card.MaterialCardView>
