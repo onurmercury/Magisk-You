@@ -3,7 +3,7 @@
 
     <!--1st party themes-->
 
-    <style name="ThemeFoundationMD2.Piplup">
+    <style name="ThemeFoundation.Piplup">
         <item name="colorPrimary">#4EAFF5</item>
         <item name="colorPrimaryVariant">#804EAFF5</item>
         <item name="colorSecondary">#3E78AF</item>
@@ -23,7 +23,7 @@
         <item name="colorDisabledVariant">#66808080</item>
     </style>
 
-    <style name="ThemeFoundationMD2.Amoled" parent="ThemeFoundationMD2.Piplup">
+    <style name="ThemeFoundation.Amoled" parent="ThemeFoundation.Piplup">
         <item name="colorSurface">#000</item>
         <item name="colorOnPrimary">#FFF</item>
         <item name="colorOnSecondary">#FFF</item>
@@ -31,12 +31,12 @@
         <item name="colorOnError">#FFF</item>
     </style>
 
-    <style name="ThemeFoundationMD2.Zapdos" parent="ThemeFoundationMD2.Zapdos.Base">
+    <style name="ThemeFoundation.Zapdos" parent="ThemeFoundation.Zapdos.Base">
         <item name="colorPrimary">#FBD179</item>
         <item name="colorPrimaryVariant">#80FBD179</item>
     </style>
 
-    <style name="ThemeFoundationMD2.Mew" parent="ThemeFoundationMD2.Mew.Base">
+    <style name="ThemeFoundation.Mew" parent="ThemeFoundation.Mew.Base">
         <item name="colorPrimary">#D9ADB7</item>
         <item name="colorPrimaryVariant">#80E9BBC5</item>
         <item name="colorOnPrimary">#000000</item>

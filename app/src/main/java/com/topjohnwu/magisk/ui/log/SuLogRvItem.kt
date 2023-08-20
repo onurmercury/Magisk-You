@@ -13,7 +13,7 @@ import com.topjohnwu.magisk.databinding.set
 
 class SuLogRvItem(val log: SuLog) : ObservableRvItem(), DiffItem<SuLogRvItem> {
 
-    override val layoutRes = R.layout.item_log_access_md2
+    override val layoutRes = R.layout.item_log_access
 
     val info = genInfo()
 

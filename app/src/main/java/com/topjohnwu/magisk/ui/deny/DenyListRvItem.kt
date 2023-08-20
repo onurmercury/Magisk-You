@@ -17,7 +17,7 @@ class DenyListRvItem(
     val info: AppProcessInfo
 ) : ObservableRvItem(), DiffItem<DenyListRvItem>, Comparable<DenyListRvItem> {
 
-    override val layoutRes get() = R.layout.item_hide_md2
+    override val layoutRes get() = R.layout.item_hide
 
     val processes = info.processes.map { ProcessRvItem(it) }
 
@@ -102,7 +102,7 @@ class ProcessRvItem(
     val process: ProcessInfo
 ) : ObservableRvItem(), DiffItem<ProcessRvItem> {
 
-    override val layoutRes get() = R.layout.item_hide_process_md2
+    override val layoutRes get() = R.layout.item_hide_process
 
     val displayName = if (process.isIsolated) "(isolated) ${process.name}" else process.name
 

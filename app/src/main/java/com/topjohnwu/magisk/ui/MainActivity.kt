@@ -25,7 +25,7 @@ import com.topjohnwu.magisk.core.Info
 import com.topjohnwu.magisk.core.isRunningAsStub
 import com.topjohnwu.magisk.core.model.module.LocalModule
 import com.topjohnwu.magisk.core.tasks.HideAPK
-import com.topjohnwu.magisk.databinding.ActivityMainMd2Binding
+import com.topjohnwu.magisk.databinding.ActivityMainBinding
 import com.topjohnwu.magisk.ui.home.HomeFragmentDirections
 import com.topjohnwu.magisk.view.MagiskDialog
 import com.topjohnwu.magisk.view.Shortcuts
@@ -35,9 +35,9 @@ import java.io.File
 
 class MainViewModel : BaseViewModel()
 
-class MainActivity : SplashActivity<ActivityMainMd2Binding>() {
+class MainActivity : SplashActivity<ActivityMainBinding>() {
 
-    override val layoutRes = R.layout.activity_main_md2
+    override val layoutRes = R.layout.activity_main
     override val viewModel by viewModel<MainViewModel>()
     override val navHostId: Int = R.id.main_nav_host
     override val snackbarView: View
@@ -130,7 +130,7 @@ class MainActivity : SplashActivity<ActivityMainMd2Binding>() {
     fun setDisplayHomeAsUpEnabled(isEnabled: Boolean) {
         binding.mainToolbar.startAnimations()
         when {
-            isEnabled -> binding.mainToolbar.setNavigationIcon(R.drawable.ic_back_md2)
+            isEnabled -> binding.mainToolbar.setNavigationIcon(R.drawable.ic_back)
             else -> binding.mainToolbar.navigationIcon = null
         }
     }

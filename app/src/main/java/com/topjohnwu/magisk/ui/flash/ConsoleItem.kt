@@ -15,7 +15,7 @@ import kotlin.math.max
 class ConsoleItem(
     override val item: String
 ) : RvItem(), ViewAwareItem, DiffItem<ConsoleItem>, ItemWrapper<String> {
-    override val layoutRes = R.layout.item_console_md2
+    override val layoutRes = R.layout.item_console
 
     private var parentWidth = -1
 
