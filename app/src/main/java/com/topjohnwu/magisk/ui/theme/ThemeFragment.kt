@@ -10,12 +10,12 @@ import com.topjohnwu.magisk.BR
 import com.topjohnwu.magisk.R
 import com.topjohnwu.magisk.arch.BaseFragment
 import com.topjohnwu.magisk.arch.viewModel
-import com.topjohnwu.magisk.databinding.FragmentThemeMd2Binding
+import com.topjohnwu.magisk.databinding.FragmentThemeBinding
 import com.topjohnwu.magisk.databinding.ItemThemeBindingImpl
 
-class ThemeFragment : BaseFragment<FragmentThemeMd2Binding>() {
+class ThemeFragment : BaseFragment<FragmentThemeBinding>() {
 
-    override val layoutRes = R.layout.fragment_theme_md2
+    override val layoutRes = R.layout.fragment_theme
     override val viewModel by viewModel<ThemeViewModel>()
 
     private fun <T> Array<T>.paired(): List<Pair<T, T?>> {

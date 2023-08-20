@@ -25,11 +25,11 @@
 
         <include
             android:id="@+id/log_track_container"
-            bullet="@{item.log.action == 2 ? R.drawable.ic_check_md2 : R.drawable.ic_close_md2}"
+            bullet="@{item.log.action == 2 ? R.drawable.ic_check : R.drawable.ic_close}"
             isBottom="@{item.isBottom}"
             isSelected="@{item.log.action != 2}"
             isTop="@{item.isTop}"
-            layout="@layout/item_log_track_md2"
+            layout="@layout/item_log_track"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"

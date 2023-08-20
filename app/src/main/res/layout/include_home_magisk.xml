@@ -70,7 +70,7 @@
                     android:text="@string/update"
                     android:textAllCaps="false"
                     android:layout_gravity="end"
-                    app:icon="@drawable/ic_update_md2" />
+                    app:icon="@drawable/ic_update" />
 
                 <Button
                     style="@style/WidgetFoundation.Button.Text"

@@ -7,7 +7,7 @@
     </item>
     <item>
         <inset
-            android:drawable="@drawable/ic_superuser"
+            android:drawable="@drawable/ic_superuser_hash"
             android:inset="13dp"/>
     </item>
 </layer-list>
