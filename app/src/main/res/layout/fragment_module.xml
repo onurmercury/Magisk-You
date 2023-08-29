@@ -27,7 +27,7 @@
             android:clipToPadding="false"
             android:orientation="vertical"
             android:paddingTop="?actionBarSize"
-            android:paddingBottom="?actionBarSize"
+            android:paddingBottom="@dimen/bottom_navigation_bar_size"
             app:fitsSystemWindowsInsets="top|bottom"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:listitem="@layout/item_module" />
