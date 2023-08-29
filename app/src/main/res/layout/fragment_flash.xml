@@ -18,9 +18,9 @@
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/internal_action_bar_size"
+            android:layout_marginTop="?actionBarSize"
             app:layout_fitsSystemWindowsInsets="top"
-            tools:layout_marginTop="@dimen/internal_action_bar_size">
+            tools:layout_marginTop="?actionBarSize">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/flash_content"

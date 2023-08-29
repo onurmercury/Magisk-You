@@ -18,7 +18,7 @@
         android:clipToPadding="false"
         android:fillViewport="true"
         android:paddingStart="@dimen/l1"
-        android:paddingTop="@dimen/internal_action_bar_size"
+        android:paddingTop="?actionBarSize"
         android:paddingEnd="@dimen/l1"
         android:paddingBottom="@dimen/l1"
         app:fitsSystemWindowsInsets="top|bottom">
