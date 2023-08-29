@@ -126,13 +126,13 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="12sp"
-                    android:background="?colorOnPrimaryVariant" />
+                    android:background="?colorOnPrimaryContainer" />
 
                 <View
                     android:layout_width="75dp"
                     android:layout_height="12sp"
                     android:layout_marginTop="@dimen/l_25"
-                    android:background="?colorOnPrimaryVariant" />
+                    android:background="?colorOnPrimaryContainer" />
 
             </LinearLayout>
 
@@ -161,7 +161,7 @@
                     <View
                         style="@style/WidgetFoundation.Image.Small"
                         android:layout_marginStart="@dimen/l1"
-                        android:background="?colorDisabled" />
+                        android:background="?colorOutline" />
 
                 </LinearLayout>
 
