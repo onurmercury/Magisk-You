@@ -129,7 +129,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_marginTop="@dimen/l1"
-                    android:background="?colorSurfaceSurfaceVariant"
+                    android:background="?colorSurface"
                     app:layout_constraintTop_toBottomOf="@+id/module_description" />
 
                 <Button
