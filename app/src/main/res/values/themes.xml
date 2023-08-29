@@ -13,7 +13,6 @@
     <style name="Theme.Foundation" parent="Base.Theme.Foundation">
         <item name="android:includeFontPadding">false</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="actionBarSize">@dimen/internal_action_bar_size</item>
         <item name="dialogTheme">@style/ThemeOverlay.Foundation.Dialog</item>
         <item name="popupMenuStyle">@style/Widget.Foundation.PopupMenu</item>
         <item name="windowActionBar">false</item>
