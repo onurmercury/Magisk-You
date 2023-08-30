@@ -11,7 +11,7 @@
     <dimen name="l2">32dp</dimen>
     <dimen name="l3">48dp</dimen>
 
-    <dimen name="r1">8dp</dimen>
+    <dimen name="r1">12dp</dimen>
 
     <dimen name="bottom_navigation_bar_size">@dimen/m3_bottom_nav_min_height</dimen>
 
