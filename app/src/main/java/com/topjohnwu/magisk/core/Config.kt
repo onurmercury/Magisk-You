@@ -1,6 +1,7 @@
 package com.topjohnwu.magisk.core
 
 import android.annotation.SuppressLint
+import android.os.Build
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.content.edit
 import com.topjohnwu.magisk.BuildConfig
@@ -129,7 +130,8 @@ object Config : PreferenceConfig, DBConfig {
 
     var safetyNotice by preference(Key.SAFETY, true)
     var darkTheme by preference(Key.DARK_THEME, AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
-    var themeOrdinal by preference(Key.THEME_ORDINAL, Theme.Piplup.ordinal)
+    var themeOrdinal by preference(Key.THEME_ORDINAL, if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S)
+        Theme.Dynamic.ordinal else Theme.Piplup.ordinal)
     var suReAuth by preference(Key.SU_REAUTH, false)
     var suTapjack by preference(Key.SU_TAPJACK, true)
     private var checkUpdatePrefs by preference(Key.CHECK_UPDATES, true)
