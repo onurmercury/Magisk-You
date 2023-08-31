@@ -12,7 +12,7 @@
     </data>
 
     <com.google.android.material.card.MaterialCardView
-        style="@style/WidgetFoundation.Card.Elevated"
+        style="@style/Widget.Foundation.Card.Elevated"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center">
@@ -47,7 +47,7 @@
 
                 <ImageView
                     android:id="@+id/app_icon"
-                    style="@style/WidgetFoundation.Icon"
+                    style="@style/Widget.Foundation.Icon"
                     android:layout_gravity="center_vertical"
                     android:layout_marginStart="@dimen/l_50"
                     android:layout_marginEnd="@dimen/l1"
@@ -127,7 +127,7 @@
 
                 <Button
                     android:id="@+id/deny_btn"
-                    style="@style/WidgetFoundation.Button.Text"
+                    style="@style/Widget.Foundation.Button.Text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -138,7 +138,7 @@
 
                 <Button
                     android:id="@+id/grant_btn"
-                    style="@style/WidgetFoundation.Button.Text"
+                    style="@style/Widget.Foundation.Button.Text"
                     onTouch="@{viewModel.grantTouchListener}"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"

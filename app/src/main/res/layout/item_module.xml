@@ -25,7 +25,7 @@
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/module"
-            style="@style/WidgetFoundation.Card"
+            style="@style/Widget.Foundation.Card"
             isEnabled="@{!item.removed &amp;&amp; item.enabled &amp;&amp; !item.showNotice}"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -134,7 +134,7 @@
 
                 <Button
                     android:id="@+id/module_update"
-                    style="@style/WidgetFoundation.Button.Text"
+                    style="@style/Widget.Foundation.Button.Text"
                     goneUnless="@{item.showUpdate}"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -153,7 +153,7 @@
 
                 <Button
                     android:id="@+id/module_remove"
-                    style="@style/WidgetFoundation.Button.Text"
+                    style="@style/Widget.Foundation.Button.Text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:clickable="true"

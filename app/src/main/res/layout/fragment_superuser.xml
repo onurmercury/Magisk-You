@@ -49,7 +49,7 @@
                 android:textStyle="bold" />
 
             <ProgressBar
-                style="@style/WidgetFoundation.ProgressBar.Indeterminate"
+                style="@style/Widget.Foundation.ProgressBar.Indeterminate"
                 android:layout_marginTop="@dimen/l1" />
 
         </LinearLayout>
