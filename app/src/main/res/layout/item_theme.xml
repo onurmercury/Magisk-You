@@ -155,11 +155,11 @@
                     android:padding="@dimen/l1">
 
                     <View
-                        style="@style/Widget.Foundation.Image.Small"
+                        style="@style/View.Image.Small"
                         android:background="?colorSecondary" />
 
                     <View
-                        style="@style/Widget.Foundation.Image.Small"
+                        style="@style/View.Image.Small"
                         android:layout_marginStart="@dimen/l1"
                         android:background="?colorOutline" />
 
@@ -170,7 +170,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ImageView
-            style="@style/Widget.Foundation.Icon.OnPrimary"
+            style="@style/View.Icon.OnPrimary"
             gone="@{!theme.isSelected}"
             android:layout_gravity="end|top"
             android:layout_margin="@dimen/l_50"

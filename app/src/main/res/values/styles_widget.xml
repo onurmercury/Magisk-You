@@ -70,36 +70,6 @@
     </style>
 
 
-    <style name="Widget.Foundation.Image">
-        <item name="android:layout_width">32dp</item>
-        <item name="android:layout_height">32dp</item>
-    </style>
-
-    <style name="Widget.Foundation.Image.Big">
-        <item name="android:layout_width">48dp</item>
-        <item name="android:layout_height">48dp</item>
-    </style>
-
-    <style name="Widget.Foundation.Image.Small">
-        <item name="android:layout_width">24dp</item>
-        <item name="android:layout_height">24dp</item>
-    </style>
-
-
-    <style name="Widget.Foundation.Icon" parent="Widget.Foundation.Image.Big">
-        <item name="android:padding">@dimen/l_75</item>
-        <item name="android:background">?selectableItemBackgroundBorderless</item>
-        <item name="tint">@color/color_text_transient</item>
-    </style>
-
-    <style name="Widget.Foundation.Icon.Primary">
-        <item name="tint">@color/color_primary_transient</item>
-    </style>
-
-    <style name="Widget.Foundation.Icon.OnPrimary">
-        <item name="tint">@color/color_on_primary_transient</item>
-    </style>
-
     <style name="Widget.Foundation.Checkbox" parent="Widget.AppCompat.CompoundButton.CheckBox">
         <item name="android:paddingStart">@dimen/l1</item>
         <item name="android:paddingEnd">@dimen/l1</item>

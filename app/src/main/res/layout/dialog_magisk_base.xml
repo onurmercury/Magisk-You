@@ -32,7 +32,7 @@
 
         <ImageView
             android:id="@+id/dialog_base_icon"
-            style="@style/Widget.Foundation.Image.Big"
+            style="@style/View.Image.Big"
             gone="@{data.icon == null}"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/l1"

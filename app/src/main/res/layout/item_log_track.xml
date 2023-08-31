@@ -45,7 +45,7 @@
 
         <ImageView
             android:id="@+id/track_bullet"
-            style="@style/Widget.Foundation.Image.Small"
+            style="@style/View.Image.Small"
             isSelected="@{isSelected}"
             srcCompat="@{bullet}"
             app:layout_constraintBottom_toBottomOf="parent"
