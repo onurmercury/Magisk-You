@@ -39,7 +39,7 @@
 
         <com.google.android.material.circularreveal.cardview.CircularRevealCardView
             android:id="@+id/log_filter"
-            style="@style/WidgetFoundation.Card"
+            style="@style/Widget.Foundation.Card"
             app:cardBackgroundColor="?colorSurface"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
