@@ -73,10 +73,11 @@
 
             </LinearLayout>
 
-            <com.google.android.material.switchmaterial.SwitchMaterial
+            <com.google.android.material.materialswitch.MaterialSwitch
                 android:id="@+id/selector_indicator"
                 goneUnless="@{item.showSwitch}"
                 isEnabled="@{item.enabled}"
+                style="@style/Widget.Foundation.Switch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="@{item.checked}"
