@@ -101,7 +101,6 @@
                 app:extraBindings="@{viewModel.extraBindings}"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?colorSurfaceVariant"
                 android:orientation="vertical"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 tools:itemCount="2"
