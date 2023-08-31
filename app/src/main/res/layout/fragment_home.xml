@@ -74,7 +74,7 @@
 
                     <Button
                         android:id="@+id/home_notice_hide"
-                        style="@style/Widget.Foundation.Button.Text.OnPrimary"
+                        style="@style/Widget.Foundation.Button.Text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:onClick="@{() -> viewModel.hideNotice()}"
@@ -82,7 +82,8 @@
                         android:textAllCaps="false"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:materialThemeOverlay="@style/ThemeOverlay.Foundation.Button.Text.OnPrimary" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -115,7 +116,7 @@
                 android:layout_height="@dimen/l1" />
 
             <Button
-                style="@style/Widget.Foundation.Button.Outlined.Error"
+                style="@style/Widget.Foundation.Button.Outlined"
                 goneUnless="@{Info.env.isActive}"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -126,7 +127,8 @@
                 android:textAllCaps="false"
                 android:textSize="12sp"
                 app:cornerRadius="@dimen/r1"
-                app:icon="@drawable/ic_delete" />
+                app:icon="@drawable/ic_delete"
+                app:materialThemeOverlay="@style/ThemeOverlay.Foundation.Button.Text.Error" />
 
             <com.google.android.material.card.MaterialCardView
                 style="@style/Widget.Foundation.Card"
