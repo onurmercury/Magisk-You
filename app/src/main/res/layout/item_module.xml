@@ -162,11 +162,11 @@
                     android:onClick="@{() -> item.delete()}"
                     android:text="@{item.removed ? @string/module_state_restore : @string/module_state_remove}"
                     android:textAllCaps="false"
-                    android:theme="@style/ThemeOverlay.Button.Text.Secondary"
                     app:icon="@{item.removed ? @drawable/ic_restart : @drawable/ic_delete}"
                     app:iconGravity="textEnd"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/module_divider"
+                    app:materialThemeOverlay="@style/ThemeOverlay.Foundation.Button.Text.Secondary"
                     tools:icon="@drawable/ic_delete"
                     tools:text="Remove" />
 

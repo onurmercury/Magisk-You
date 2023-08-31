@@ -165,11 +165,9 @@
                         android:onClick="@{() -> item.revoke()}"
                         android:text="@string/superuser_toggle_revoke"
                         android:textAllCaps="false"
-                        android:textColor="?colorError"
                         android:textSize="12sp"
                         app:icon="@drawable/ic_delete"
-                        app:iconTint="?colorError"
-                        app:rippleColor="?colorError" />
+                        app:materialThemeOverlay="@style/ThemeOverlay.Foundation.Button.Text.Error" />
 
                 </LinearLayout>
 

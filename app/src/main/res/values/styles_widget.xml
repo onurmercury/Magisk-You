@@ -35,23 +35,10 @@
         <item name="strokeColor" tools:ignore="PrivateResource">@color/m3_text_button_foreground_color_selector</item>
     </style>
 
-    <style name="Widget.Foundation.Button.Outlined.Error">
-        <item name="strokeColor">@color/color_error_transient</item>
-        <item name="rippleColor">@color/color_error_transient</item>
-        <item name="android:textColor">@color/color_error_transient</item>
-        <item name="iconTint">@color/color_error_transient</item>
-    </style>
-
     <style name="Widget.Foundation.Button.Text" parent="Widget.Material3.Button.TextButton">
         <item name="android:minWidth">@dimen/l4</item>
         <item name="iconGravity">textStart</item>
         <item name="iconPadding">6dp</item>
-    </style>
-
-    <style name="Widget.Foundation.Button.Text.OnPrimary">
-        <item name="rippleColor">?colorOnPrimary</item>
-        <item name="android:textColor">?colorOnPrimary</item>
-        <item name="iconTint">?colorOnPrimary</item>
     </style>
 
 
