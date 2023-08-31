@@ -18,7 +18,7 @@
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/policy"
-            style="@style/WidgetFoundation.Card"
+            style="@style/Widget.Foundation.Card"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:alpha="@{item.enabled ? 1f : .5f}"
@@ -37,7 +37,7 @@
 
                     <ImageView
                         android:id="@+id/policy_app_icon"
-                        style="@style/WidgetFoundation.Image"
+                        style="@style/Widget.Foundation.Image"
                         srcCompat="@{item.icon}"
                         android:layout_marginStart="@dimen/l1"
                         android:layout_marginTop="@dimen/l1"
@@ -109,7 +109,7 @@
 
                     <Button
                         android:id="@+id/policy_notify"
-                        style="@style/WidgetFoundation.Button.Text"
+                        style="@style/Widget.Foundation.Button.Text"
                         isSelected="@{item.shouldNotify}"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -133,7 +133,7 @@
 
                     <Button
                         android:id="@+id/policy_log"
-                        style="@style/WidgetFoundation.Button.Text"
+                        style="@style/Widget.Foundation.Button.Text"
                         isSelected="@{item.shouldLog}"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -157,7 +157,7 @@
 
                     <Button
                         android:id="@+id/policy_delete"
-                        style="@style/WidgetFoundation.Button.Text"
+                        style="@style/Widget.Foundation.Button.Text"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"

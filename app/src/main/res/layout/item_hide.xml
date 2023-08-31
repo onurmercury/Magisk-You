@@ -18,7 +18,7 @@
     </data>
 
     <com.google.android.material.card.MaterialCardView
-        style="@style/WidgetFoundation.Card"
+        style="@style/Widget.Foundation.Card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:focusable="false"
@@ -42,7 +42,7 @@
 
                 <ImageView
                     android:id="@+id/hide_icon"
-                    style="@style/WidgetFoundation.Image"
+                    style="@style/Widget.Foundation.Image"
                     android:layout_margin="@dimen/l1"
                     android:src="@{item.info.iconImage}"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -110,7 +110,7 @@
         </LinearLayout>
 
         <ProgressBar
-            style="@style/WidgetFoundation.ProgressBar"
+            style="@style/Widget.Foundation.ProgressBar"
             gone="@{item.checkedPercent == 0}"
             android:layout_width="match_parent"
             android:layout_gravity="top"

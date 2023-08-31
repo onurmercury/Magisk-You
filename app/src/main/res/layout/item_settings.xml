@@ -16,7 +16,7 @@
     </data>
 
     <com.google.android.material.card.MaterialCardView
-        style="@style/WidgetFoundation.Card"
+        style="@style/Widget.Foundation.Card"
         isEnabled="@{item.enabled}"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
 
             <ImageView
                 android:id="@+id/icon"
-                style="@style/WidgetFoundation.Icon"
+                style="@style/Widget.Foundation.Icon"
                 gone="@{item.icon == 0}"
                 android:background="@null"
                 app:srcCompat="@{item.icon}"

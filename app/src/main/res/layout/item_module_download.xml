@@ -15,7 +15,7 @@
     </data>
 
     <Button
-        style="@style/WidgetFoundation.Button.Outlined"
+        style="@style/Widget.Foundation.Button.Outlined"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/l_50"

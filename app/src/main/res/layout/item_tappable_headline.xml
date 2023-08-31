@@ -16,7 +16,7 @@
     </data>
 
     <com.google.android.material.card.MaterialCardView
-        style="@style/WidgetFoundation.Card"
+        style="@style/Widget.Foundation.Card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="@{() -> listener.onItemPressed(item)}"
@@ -28,7 +28,7 @@
 
             <ImageView
                 android:id="@+id/tappable_icon"
-                style="@style/WidgetFoundation.Icon"
+                style="@style/Widget.Foundation.Icon"
                 android:background="@null"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -52,7 +52,7 @@
 
             <ImageView
                 android:id="@+id/headline_icon_pointer"
-                style="@style/WidgetFoundation.Icon"
+                style="@style/Widget.Foundation.Icon"
                 android:background="@null"
                 android:rotation="180"
                 app:layout_constraintBottom_toBottomOf="parent"

@@ -3,14 +3,8 @@
 
     <!--region Do not remove-->
 
-    <style name="WidgetFoundation" parent="android:Widget" />
 
     <!--endregion-->
-
-    <style name="Foundation.PopupMenu" parent="Widget.MaterialComponents.PopupMenu">
-        <item name="android:itemTextAppearance">@style/AppearanceFoundation.Caption</item>
-        <item name="android:textStyle">bold</item>
-    </style>
 
     <style name="Foundation.Floating" parent="">
         <item name="android:windowIsFloating">true</item>
