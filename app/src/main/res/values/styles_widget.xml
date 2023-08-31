@@ -12,10 +12,6 @@
         <item name="cardPreventCornerOverlap">false</item>
     </style>
 
-    <style name="Widget.Foundation.Card.Primary">
-        <item name="cardBackgroundColor">?colorPrimary</item>
-    </style>
-
     <style name="Widget.Foundation.Card.Elevated">
         <item name="cardCornerRadius">@dimen/l_50</item>
         <item name="cardElevation">@dimen/l_125</item>
