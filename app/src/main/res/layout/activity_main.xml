@@ -53,12 +53,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center_horizontal"
             android:fitsSystemWindows="false"
-            android:paddingBottom="0dp"
             app:fitsSystemWindowsInsets="start|end|bottom"
             app:itemHorizontalTranslationEnabled="false"
-            app:itemIconTint="@color/color_menu_tint"
-            app:itemRippleColor="?colorPrimary"
-            app:itemTextColor="@color/color_menu_tint"
+            app:itemIconTint="@color/color_bottomnavbar_with_disabled_icon_tint"
+            app:itemTextColor="@color/color_bottomnavbar_with_disabled_label_tint"
             app:labelVisibilityMode="labeled"
             app:menu="@menu/menu_bottom_nav" />
 
