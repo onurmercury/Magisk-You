@@ -36,7 +36,7 @@
 
             <ImageView
                 android:id="@+id/icon"
-                style="@style/Widget.Foundation.Icon"
+                style="@style/View.Icon"
                 gone="@{item.icon == 0}"
                 android:background="@null"
                 app:srcCompat="@{item.icon}"

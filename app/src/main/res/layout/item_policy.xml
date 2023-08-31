@@ -37,7 +37,7 @@
 
                     <ImageView
                         android:id="@+id/policy_app_icon"
-                        style="@style/Widget.Foundation.Image"
+                        style="@style/View.Image"
                         srcCompat="@{item.icon}"
                         android:layout_marginStart="@dimen/l1"
                         android:layout_marginTop="@dimen/l1"
