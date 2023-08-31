@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="ThemeOverlay.Button.Text.Secondary" parent="">
-        <item name="colorPrimary">?colorSecondary</item>
+    <style name="ThemeOverlay.Foundation.Button.Text" parent="ThemeOverlay.Material3.Button.TextButton" />
+
+    <style name="ThemeOverlay.Foundation.Button.Text.Error">
+        <item name="colorOnContainer">?colorError</item>
+    </style>
+
+    <style name="ThemeOverlay.Foundation.Button.Text.OnPrimary">
+        <item name="colorOnContainer">?colorOnPrimary</item>
+    </style>
+
+    <style name="ThemeOverlay.Foundation.Button.Text.Secondary">
+        <item name="colorOnContainer">?colorSecondary</item>
     </style>
 
 
