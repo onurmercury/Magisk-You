@@ -116,7 +116,6 @@
                         android:minHeight="24dp"
                         android:onClick="@{() -> item.toggleNotify()}"
                         android:text="@string/superuser_toggle_notification"
-                        android:textAllCaps="false"
                         android:textAppearance="@style/TextAppearance.Foundation.Tiny"
                         android:textColor="@color/color_state_primary_transient"
                         app:icon="@drawable/ic_notifications"
@@ -140,7 +139,6 @@
                         android:minHeight="24dp"
                         android:onClick="@{() -> item.toggleLog()}"
                         android:text="@string/logs"
-                        android:textAllCaps="false"
                         android:textAppearance="@style/TextAppearance.Foundation.Tiny"
                         android:textColor="@color/color_state_primary_transient"
                         app:icon="@drawable/ic_bug"
@@ -163,7 +161,6 @@
                         android:minHeight="24dp"
                         android:onClick="@{() -> item.revoke()}"
                         android:text="@string/superuser_toggle_revoke"
-                        android:textAllCaps="false"
                         android:textSize="12sp"
                         app:icon="@drawable/ic_delete"
                         app:materialThemeOverlay="@style/ThemeOverlay.Foundation.Button.Text.Error" />

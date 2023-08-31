@@ -42,7 +42,6 @@
                 android:layout_gravity="center"
                 android:onClick="@{() -> viewModel.onTestPressed()}"
                 android:text="TEST"
-                android:textAllCaps="false"
                 tools:visibility="gone" />
 
             <com.google.android.material.card.MaterialCardView
@@ -79,7 +78,6 @@
                         android:layout_height="wrap_content"
                         android:onClick="@{() -> viewModel.hideNotice()}"
                         android:text="@string/hide"
-                        android:textAllCaps="false"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -124,7 +122,6 @@
                 android:layout_marginEnd="@dimen/l1"
                 android:onClick="@{() -> viewModel.onDeletePressed()}"
                 android:text="@string/uninstall_magisk_title"
-                android:textAllCaps="false"
                 android:textSize="12sp"
                 app:cornerRadius="@dimen/r1"
                 app:icon="@drawable/ic_delete"
