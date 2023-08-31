@@ -21,7 +21,6 @@
         android:layout_marginBottom="@dimen/l_50"
         android:onClick="@{() -> viewModel.installPressed()}"
         android:text="@string/module_action_install_external"
-        android:textAllCaps="false"
         android:textSize="12sp"
         app:cornerRadius="@dimen/r1"
         app:icon="@drawable/ic_module_storage" />
