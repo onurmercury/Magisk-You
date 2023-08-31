@@ -30,6 +30,17 @@
     </style>
 
 
+    <style name="Widget.Foundation.Switch" parent="Widget.Material3.CompoundButton.MaterialSwitch">
+        <item name="android:scaleX">0.95</item>
+        <item name="android:scaleY">0.95</item>
+    </style>
+
+    <style name="Widget.Foundation.Switch.Small">
+        <item name="android:scaleX">0.8</item>
+        <item name="android:scaleY">0.8</item>
+    </style>
+
+
     <style name="Widget.Foundation.Checkbox" parent="Widget.Material3.CompoundButton.CheckBox">
         <item name="android:paddingStart">@dimen/l1</item>
         <item name="android:paddingEnd">@dimen/l1</item>
