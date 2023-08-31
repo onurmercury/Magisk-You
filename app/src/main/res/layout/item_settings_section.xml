@@ -22,7 +22,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@{item.title}"
-            android:textAppearance="@style/TextAppearance.Foundation.Large.Secondary"
+            android:textAppearance="@style/TextAppearance.Foundation.Large"
+            android:textColor="?colorSecondary"
             android:textStyle="bold"
             tools:text="@tools:sample/lorem" />
 
@@ -31,7 +32,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@{item.description}"
-            android:textAppearance="@style/TextAppearance.Foundation.Tiny.Bold"
+            android:textAppearance="@style/TextAppearance.Foundation.Tiny"
+            android:textStyle="bold"
             tools:text="@tools:sample/lorem/random" />
 
     </LinearLayout>

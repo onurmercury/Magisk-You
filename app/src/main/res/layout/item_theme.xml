@@ -117,7 +117,8 @@
                     android:layout_width="125dp"
                     android:layout_height="wrap_content"
                     android:text="@{theme.themeName}"
-                    android:textAppearance="@style/TextAppearance.Foundation.Title.OnPrimary"
+                    android:textAppearance="@style/TextAppearance.Foundation.Title"
+                    android:textColor="?colorOnPrimary"
                     android:textStyle="bold"
                     tools:text="Default" />
 
@@ -168,7 +169,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ImageView
-            style="@style/View.Icon.OnPrimary"
+            style="@style/View.Icon"
             gone="@{!theme.isSelected}"
             android:layout_gravity="end|top"
             android:layout_margin="@dimen/l_50"
