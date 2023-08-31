@@ -32,14 +32,14 @@
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/main_toolbar_wrapper"
-            style="@style/WidgetFoundation.Appbar"
+            style="@style/Widget.Foundation.Appbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:fitsSystemWindowsInsets="top">
 
             <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/main_toolbar"
-                style="@style/WidgetFoundation.Toolbar"
+                style="@style/Widget.Foundation.Toolbar"
                 android:layout_width="match_parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_scrollFlags="noScroll"

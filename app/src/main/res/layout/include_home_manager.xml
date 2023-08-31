@@ -16,7 +16,7 @@
     </data>
 
     <com.google.android.material.card.MaterialCardView
-        style="@style/WidgetFoundation.Card"
+        style="@style/Widget.Foundation.Card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:focusable="false">
@@ -32,7 +32,7 @@
 
             <ImageView
                 android:id="@+id/home_manager_icon"
-                style="@style/WidgetFoundation.Icon.Primary"
+                style="@style/Widget.Foundation.Icon.Primary"
                 android:padding="@dimen/l_50"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -63,7 +63,7 @@
                 app:layout_constraintTop_toTopOf="@+id/home_manager_title">
 
                 <Button
-                    style="@style/WidgetFoundation.Button"
+                    style="@style/Widget.Foundation.Button"
                     gone="@{viewModel.appState != State.OUTDATED}"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
                     app:icon="@drawable/ic_update" />
 
                 <Button
-                    style="@style/WidgetFoundation.Button.Text"
+                    style="@style/Widget.Foundation.Button.Text"
                     gone="@{viewModel.appState != State.UP_TO_DATE}"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -166,7 +166,7 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <ProgressBar
-                        style="@style/WidgetFoundation.ProgressBar"
+                        style="@style/Widget.Foundation.ProgressBar"
                         gone="@{viewModel.stateManagerProgress == 0 || viewModel.stateManagerProgress == 100}"
                         android:layout_width="match_parent"
                         android:layout_gravity="bottom"
