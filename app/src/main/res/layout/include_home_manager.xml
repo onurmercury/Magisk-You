@@ -44,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/l1"
                 android:text="@string/home_app_title"
-                android:textAppearance="@style/AppearanceFoundation.Title"
+                android:textAppearance="@style/TextAppearance.Foundation.Title"
                 android:textColor="?colorPrimary"
                 android:maxLines="1"
                 android:ellipsize="end"

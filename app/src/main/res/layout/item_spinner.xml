@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:ellipsize="marquee"
     android:background="@android:color/transparent"
-    android:textAppearance="@style/AppearanceFoundation.Caption"
+    android:textAppearance="@style/TextAppearance.Foundation.Caption"
     android:gravity="center_vertical"
     android:minHeight="?attr/listPreferredItemHeightSmall"
     android:singleLine="true"

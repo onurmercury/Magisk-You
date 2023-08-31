@@ -32,7 +32,7 @@
             app:errorTextColor="?colorError"
             app:helperText="@string/settings_app_name_helper"
             app:hintEnabled="true"
-            app:hintTextAppearance="@style/AppearanceFoundation.Tiny"
+            app:hintTextAppearance="@style/TextAppearance.Foundation.Tiny"
             app:hintTextColor="?colorOnSurfaceVariant">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textCapWords"
                 android:text="@={data.result}"
-                android:textAppearance="@style/AppearanceFoundation.Body"
+                android:textAppearance="@style/TextAppearance.Foundation.Body"
                 android:textColor="?colorOnSurface"
                 tools:text="@tools:sample/lorem" />
 
