@@ -16,7 +16,7 @@
     </data>
 
     <com.google.android.material.card.MaterialCardView
-        style="@style/WidgetFoundation.Card"
+        style="@style/Widget.Foundation.Card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="@{() -> viewModel.saveTheme(theme)}"
@@ -32,13 +32,13 @@
 
             <com.google.android.material.appbar.AppBarLayout
                 android:id="@+id/theme_appbar"
-                style="@style/WidgetFoundation.Appbar"
+                style="@style/Widget.Foundation.Appbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <com.google.android.material.appbar.MaterialToolbar
-                    style="@style/WidgetFoundation.Toolbar"
+                    style="@style/Widget.Foundation.Toolbar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -68,7 +68,7 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/theme_card_bottom"
-                style="@style/WidgetFoundation.Card"
+                style="@style/Widget.Foundation.Card"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/l1"
@@ -138,7 +138,7 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/theme_navigation"
-                style="@style/WidgetFoundation.Card.Elevated"
+                style="@style/Widget.Foundation.Card.Elevated"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/l1"
@@ -155,11 +155,11 @@
                     android:padding="@dimen/l1">
 
                     <View
-                        style="@style/WidgetFoundation.Image.Small"
+                        style="@style/Widget.Foundation.Image.Small"
                         android:background="?colorSecondary" />
 
                     <View
-                        style="@style/WidgetFoundation.Image.Small"
+                        style="@style/Widget.Foundation.Image.Small"
                         android:layout_marginStart="@dimen/l1"
                         android:background="?colorOutline" />
 
@@ -170,7 +170,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ImageView
-            style="@style/WidgetFoundation.Icon.OnPrimary"
+            style="@style/Widget.Foundation.Icon.OnPrimary"
             gone="@{!theme.isSelected}"
             android:layout_gravity="end|top"
             android:layout_margin="@dimen/l_50"

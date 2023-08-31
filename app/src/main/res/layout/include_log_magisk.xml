@@ -54,7 +54,7 @@
                 android:textStyle="bold" />
 
             <ProgressBar
-                style="@style/WidgetFoundation.ProgressBar.Indeterminate"
+                style="@style/Widget.Foundation.ProgressBar.Indeterminate"
                 goneUnless="@{viewModel.loading}"
                 android:layout_marginTop="@dimen/l1" />
 
