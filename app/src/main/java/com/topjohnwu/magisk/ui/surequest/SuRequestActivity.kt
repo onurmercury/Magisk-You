@@ -54,7 +54,7 @@ open class SuRequestActivity : UIActivity<ActivityRequestBinding>() {
 
     override fun getTheme(): Resources.Theme {
         val theme = super.getTheme()
-        theme.applyStyle(R.style.Foundation_Floating, true)
+        theme.applyStyle(R.style.View_Floating, true)
         return theme
     }
 

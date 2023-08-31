@@ -52,7 +52,7 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            style="@style/Widget.Foundation.Icon"
+                            style="@style/View.Icon"
                             isSelected="@{viewModel.step > 0}"
                             android:layout_marginStart="@dimen/l_25"
                             app:srcCompat="@drawable/ic_check_circle" />
@@ -143,7 +143,7 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            style="@style/Widget.Foundation.Icon"
+                            style="@style/View.Icon"
                             isSelected="@{viewModel.step > 1}"
                             android:layout_marginStart="@dimen/l_25"
                             app:srcCompat="@drawable/ic_check_circle" />
