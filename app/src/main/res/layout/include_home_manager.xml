@@ -70,7 +70,6 @@
                     android:layout_height="wrap_content"
                     android:onClick="@{() -> viewModel.onManagerPressed()}"
                     android:text="@string/update"
-                    android:textAllCaps="false"
                     android:layout_gravity="end"
                     app:icon="@drawable/ic_update" />
 
@@ -82,7 +81,6 @@
                     android:layout_gravity="end"
                     android:onClick="@{() -> viewModel.onManagerPressed()}"
                     android:text="@string/install"
-                    android:textAllCaps="false"
                     app:icon="@drawable/ic_install"/>
 
             </FrameLayout>
