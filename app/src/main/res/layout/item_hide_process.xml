@@ -31,7 +31,7 @@
             android:singleLine="true"
             android:ellipsize="middle"
             android:text="@{item.displayName}"
-            android:textAppearance="@style/AppearanceFoundation.Caption.Variant"
+            android:textAppearance="@style/TextAppearance.Foundation.Caption.Variant"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/hide_process_checkbox"
             app:layout_constraintStart_toStartOf="parent"

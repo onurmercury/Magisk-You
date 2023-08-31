@@ -57,7 +57,7 @@
                     android:layout_gravity="center"
                     android:gravity="start"
                     android:text="@{item.title}"
-                    android:textAppearance="@style/AppearanceFoundation.Body"
+                    android:textAppearance="@style/TextAppearance.Foundation.Body"
                     android:textStyle="bold"
                     tools:lines="1"
                     tools:text="@tools:sample/lorem/random" />
@@ -67,7 +67,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@{item.description}"
-                    android:textAppearance="@style/AppearanceFoundation.Tiny.Variant"
+                    android:textAppearance="@style/TextAppearance.Foundation.Tiny.Variant"
                     tools:lines="2"
                     tools:text="@tools:sample/lorem/random" />
 

@@ -2,65 +2,65 @@
 <resources>
 
     <!--region Display-->
-    <style name="AppearanceFoundation.Large" parent="TextAppearance.AppCompat.Large">
+    <style name="TextAppearance.Foundation.Large" parent="TextAppearance.AppCompat.Large">
         <item name="android:textColor">?attr/colorOnSurface</item>
     </style>
 
-    <style name="AppearanceFoundation.Large.Secondary">
+    <style name="TextAppearance.Foundation.Large.Secondary">
         <item name="android:textColor">?colorSecondary</item>
     </style>
 
     <!--endregion-->
 
     <!--region Title-->
-    <style name="AppearanceFoundation.Title" parent="TextAppearance.AppCompat.Title">
+    <style name="TextAppearance.Foundation.Title" parent="TextAppearance.AppCompat.Title">
         <item name="android:textColor">?attr/colorOnSurface</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="AppearanceFoundation.Title.OnPrimary">
+    <style name="TextAppearance.Foundation.Title.OnPrimary">
         <item name="android:textColor">?attr/colorOnPrimary</item>
     </style>
 
     <!--endregion-->
 
     <!--region Body-->
-    <style name="AppearanceFoundation.Body" parent="TextAppearance.AppCompat.Body1">
+    <style name="TextAppearance.Foundation.Body" parent="TextAppearance.AppCompat.Body1">
         <item name="android:textColor">?attr/colorOnSurface</item>
     </style>
 
     <!--endregion-->
 
     <!--region Caption-->
-    <style name="AppearanceFoundation.Caption" parent="TextAppearance.AppCompat.Caption">
+    <style name="TextAppearance.Foundation.Caption" parent="TextAppearance.AppCompat.Caption">
         <item name="android:textColor">?attr/colorOnSurface</item>
     </style>
 
-    <style name="AppearanceFoundation.Caption.Variant">
+    <style name="TextAppearance.Foundation.Caption.Variant">
         <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
     </style>
 
-    <style name="AppearanceFoundation.Caption.Primary">
+    <style name="TextAppearance.Foundation.Caption.Primary">
         <item name="android:textColor">?attr/colorPrimary</item>
     </style>
 
-    <style name="AppearanceFoundation.Caption.OnPrimary">
+    <style name="TextAppearance.Foundation.Caption.OnPrimary">
         <item name="android:textColor">?attr/colorOnPrimary</item>
     </style>
 
     <!--endregion-->
 
     <!--region Tiny-->
-    <style name="AppearanceFoundation.Tiny" parent="TextAppearance.AppCompat.Caption">
+    <style name="TextAppearance.Foundation.Tiny" parent="TextAppearance.AppCompat.Caption">
         <item name="android:textColor">?attr/colorOnSurface</item>
         <item name="android:textSize">11sp</item>
     </style>
 
-    <style name="AppearanceFoundation.Tiny.Bold">
+    <style name="TextAppearance.Foundation.Tiny.Bold">
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="AppearanceFoundation.Tiny.Variant">
+    <style name="TextAppearance.Foundation.Tiny.Variant">
         <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
     </style>
 

@@ -7,9 +7,9 @@
     <style name="Widget.Foundation.Appbar" parent="Widget.MaterialComponents.AppBarLayout.Surface" />
 
     <style name="Widget.Foundation.Toolbar" parent="Widget.MaterialComponents.Toolbar.Surface">
-        <item name="titleTextAppearance">@style/AppearanceFoundation.Title</item>
+        <item name="titleTextAppearance">@style/TextAppearance.Foundation.Title</item>
         <item name="titleTextColor">?colorOnSurface</item>
-        <item name="subtitleTextAppearance">@style/AppearanceFoundation.Caption</item>
+        <item name="subtitleTextAppearance">@style/TextAppearance.Foundation.Caption</item>
         <item name="subtitleTextColor">?colorOnSurfaceVariant</item>
         <item name="android:background">@android:color/transparent</item>
         <item name="contentInsetStartWithNavigation">0dp</item>
@@ -93,7 +93,7 @@
     </style>
 
     <style name="Widget.Foundation.PopupMenu" parent="Widget.MaterialComponents.PopupMenu">
-        <item name="android:itemTextAppearance">@style/AppearanceFoundation.Caption</item>
+        <item name="android:itemTextAppearance">@style/TextAppearance.Foundation.Caption</item>
         <item name="android:textStyle">bold</item>
     </style>
 
