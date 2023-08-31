@@ -46,14 +46,15 @@
                 tools:visibility="gone" />
 
             <com.google.android.material.card.MaterialCardView
-                style="@style/Widget.Foundation.Card.Primary"
+                style="@style/Widget.Foundation.Card"
                 goneUnless="@{viewModel.noticeVisible}"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/l1"
                 android:layout_marginEnd="@dimen/l1"
                 android:layout_marginBottom="@dimen/l1"
-                android:focusable="false">
+                android:focusable="false"
+                app:cardBackgroundColor="?colorPrimary">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -65,7 +66,8 @@
                         android:layout_height="wrap_content"
                         android:padding="@dimen/l1"
                         android:text="@string/home_notice_content"
-                        android:textAppearance="@style/TextAppearance.Foundation.Caption.OnPrimary"
+                        android:textAppearance="@style/TextAppearance.Foundation.Caption"
+                        android:textColor="?colorOnPrimary"
                         app:layout_constraintEnd_toStartOf="@+id/home_notice_hide"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
