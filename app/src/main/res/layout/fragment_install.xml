@@ -64,7 +64,7 @@
                             android:layout_weight="1"
                             android:gravity="center_vertical"
                             android:text="@string/install_options_title"
-                            android:textAppearance="@style/AppearanceFoundation.Body"
+                            android:textAppearance="@style/TextAppearance.Foundation.Body"
                             android:textStyle="bold" />
 
                         <Button
@@ -155,7 +155,7 @@
                             android:layout_weight="1"
                             android:gravity="center_vertical"
                             android:text="@string/install_method_title"
-                            android:textAppearance="@style/AppearanceFoundation.Body"
+                            android:textAppearance="@style/TextAppearance.Foundation.Body"
                             android:textStyle="bold" />
 
                         <Button
@@ -230,7 +230,7 @@
                     android:layout_margin="15dp"
                     android:breakStrategy="simple"
                     android:hyphenationFrequency="none"
-                    android:textAppearance="@style/AppearanceFoundation.Caption"
+                    android:textAppearance="@style/TextAppearance.Foundation.Caption"
                     tools:ignore="UnusedAttribute"
                     tools:maxLines="5"
                     tools:text="@tools:sample/lorem/random"
