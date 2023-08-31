@@ -120,8 +120,7 @@
                         android:textAppearance="@style/TextAppearance.Foundation.Tiny"
                         android:textColor="@color/color_state_primary_transient"
                         app:icon="@drawable/ic_notifications"
-                        app:iconTint="@color/color_state_primary_transient"
-                        app:tint="@color/color_state_primary_transient" />
+                        app:iconTint="@color/color_state_primary_transient" />
 
                     <View
                         android:layout_width="1dp"
@@ -143,8 +142,7 @@
                         android:textAppearance="@style/TextAppearance.Foundation.Tiny"
                         android:textColor="@color/color_state_primary_transient"
                         app:icon="@drawable/ic_bug"
-                        app:iconTint="@color/color_state_primary_transient"
-                        app:tint="@color/color_state_primary_transient" />
+                        app:iconTint="@color/color_state_primary_transient" />
 
                     <View
                         android:layout_width="1dp"
@@ -162,7 +160,7 @@
                         android:minHeight="24dp"
                         android:onClick="@{() -> item.revoke()}"
                         android:text="@string/superuser_toggle_revoke"
-                        android:textSize="12sp"
+                        android:textAppearance="@style/TextAppearance.Foundation.Tiny"
                         app:icon="@drawable/ic_delete"
                         app:materialThemeOverlay="@style/ThemeOverlay.Foundation.Button.Text.Error" />
 
