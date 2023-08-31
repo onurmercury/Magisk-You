@@ -51,7 +51,7 @@
             android:layout_marginTop="@dimen/l1"
             android:gravity="center"
             android:text="@{data.title}"
-            android:textAppearance="@style/AppearanceFoundation.Title"
+            android:textAppearance="@style/TextAppearance.Foundation.Title"
             app:layout_constraintEnd_toEndOf="@+id/dialog_base_end"
             app:layout_constraintStart_toStartOf="@+id/dialog_base_start"
             app:layout_constraintTop_toBottomOf="@+id/dialog_base_icon"
@@ -79,7 +79,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="@{data.message}"
-                    android:textAppearance="@style/AppearanceFoundation.Body"
+                    android:textAppearance="@style/TextAppearance.Foundation.Body"
                     tools:lines="3"
                     tools:text="@tools:sample/lorem/random" />
 

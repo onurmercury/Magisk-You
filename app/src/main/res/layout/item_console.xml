@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="monospace"
         android:text="@{item.item}"
-        android:textAppearance="@style/AppearanceFoundation.Caption"
+        android:textAppearance="@style/TextAppearance.Foundation.Caption"
         tools:text="@tools:sample/lorem/random" />
 
 </layout>
