@@ -32,7 +32,7 @@
 
             <ImageView
                 android:id="@+id/home_manager_icon"
-                style="@style/Widget.Foundation.Icon.Primary"
+                style="@style/View.Icon.Primary"
                 android:padding="@dimen/l_50"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -113,16 +113,16 @@
 
                         <LinearLayout
                             android:id="@+id/home_manager_latest_version"
-                            style="@style/W.Home.Item.Top"
+                            style="@style/View.Home.Item.Top"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
 
                             <TextView
-                                style="@style/W.Home.ItemContent"
+                                style="@style/View.Home.ItemContent"
                                 android:text="@string/home_latest_version" />
 
                             <TextView
-                                style="@style/W.Home.ItemContent.Right"
+                                style="@style/View.Home.ItemContent.Right"
                                 android:text="@{viewModel.managerRemoteVersion}"
                                 tools:text="22.0 (22000) (16)" />
 
@@ -130,16 +130,16 @@
 
                         <LinearLayout
                             android:id="@+id/home_manager_installed_version"
-                            style="@style/W.Home.Item"
+                            style="@style/View.Home.Item"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/home_manager_latest_version">
 
                             <TextView
-                                style="@style/W.Home.ItemContent"
+                                style="@style/View.Home.ItemContent"
                                 android:text="@string/home_installed_version" />
 
                             <TextView
-                                style="@style/W.Home.ItemContent.Right"
+                                style="@style/View.Home.ItemContent.Right"
                                 android:text="@{viewModel.managerInstalledVersion}"
                                 tools:text="22.0 (22000) (16)" />
 
@@ -147,17 +147,17 @@
 
                         <LinearLayout
                             android:id="@+id/home_manager_internal_connection"
-                            style="@style/W.Home.Item.Bottom"
+                            style="@style/View.Home.Item.Bottom"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/home_manager_installed_version">
 
                             <TextView
-                                style="@style/W.Home.ItemContent"
+                                style="@style/View.Home.ItemContent"
                                 android:text="@string/home_package" />
 
                             <TextView
                                 android:id="@+id/home_manager_extra_connection_value"
-                                style="@style/W.Home.ItemContent.Right"
+                                style="@style/View.Home.ItemContent.Right"
                                 android:text="@{context.packageName}"
                                 tools:text="com.topjohnwu.magisk" />
 

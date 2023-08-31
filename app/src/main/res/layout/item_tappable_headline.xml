@@ -28,7 +28,7 @@
 
             <ImageView
                 android:id="@+id/tappable_icon"
-                style="@style/Widget.Foundation.Icon"
+                style="@style/View.Icon"
                 android:background="@null"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -52,7 +52,7 @@
 
             <ImageView
                 android:id="@+id/headline_icon_pointer"
-                style="@style/Widget.Foundation.Icon"
+                style="@style/View.Icon"
                 android:background="@null"
                 android:rotation="180"
                 app:layout_constraintBottom_toBottomOf="parent"

@@ -32,7 +32,7 @@
 
             <ImageView
                 android:id="@+id/home_magisk_icon"
-                style="@style/Widget.Foundation.Icon.Primary"
+                style="@style/View.Icon.Primary"
                 android:padding="@dimen/l_25"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -112,16 +112,16 @@
 
                         <LinearLayout
                             android:id="@+id/home_magisk_installed_version"
-                            style="@style/W.Home.Item.Top"
+                            style="@style/View.Home.Item.Top"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
 
                             <TextView
-                                style="@style/W.Home.ItemContent"
+                                style="@style/View.Home.ItemContent"
                                 android:text="@string/home_installed_version" />
 
                             <TextView
-                                style="@style/W.Home.ItemContent.Right"
+                                style="@style/View.Home.ItemContent.Right"
                                 android:text="@{viewModel.magiskInstalledVersion}"
                                 tools:text="22.0 (22000)" />
 
@@ -129,16 +129,16 @@
 
                         <LinearLayout
                             android:id="@+id/home_device_details_zygisk"
-                            style="@style/W.Home.Item"
+                            style="@style/View.Home.Item"
                             app:layout_constraintStart_toStartOf="@+id/home_magisk_installed_version"
                             app:layout_constraintTop_toBottomOf="@+id/home_magisk_installed_version">
 
                             <TextView
-                                style="@style/W.Home.ItemContent"
+                                style="@style/View.Home.ItemContent"
                                 android:text="@string/zygisk" />
 
                             <TextView
-                                style="@style/W.Home.ItemContent.Right"
+                                style="@style/View.Home.ItemContent.Right"
                                 android:text="@{Info.isZygiskEnabled ? @string/yes : @string/no}"
                                 tools:text="Yes" />
 
@@ -146,16 +146,16 @@
 
                         <LinearLayout
                             android:id="@+id/home_device_details_ramdisk"
-                            style="@style/W.Home.Item.Bottom"
+                            style="@style/View.Home.Item.Bottom"
                             app:layout_constraintStart_toStartOf="@+id/home_magisk_installed_version"
                             app:layout_constraintTop_toBottomOf="@+id/home_device_details_zygisk">
 
                             <TextView
-                                style="@style/W.Home.ItemContent"
+                                style="@style/View.Home.ItemContent"
                                 android:text="Ramdisk" />
 
                             <TextView
-                                style="@style/W.Home.ItemContent.Right"
+                                style="@style/View.Home.ItemContent.Right"
                                 android:text="@{Info.ramdisk ? @string/yes : @string/no }"
                                 tools:text="Yes" />
 
