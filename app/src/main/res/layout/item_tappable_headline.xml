@@ -42,7 +42,7 @@
                 android:requiresFadingEdge="horizontal"
                 android:singleLine="true"
                 android:text="@{item.title}"
-                android:textAppearance="@style/AppearanceFoundation.Body"
+                android:textAppearance="@style/TextAppearance.Foundation.Body"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/headline_icon_pointer"

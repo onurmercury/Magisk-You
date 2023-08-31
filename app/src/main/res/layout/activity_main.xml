@@ -59,8 +59,8 @@
             app:itemHorizontalTranslationEnabled="false"
             app:itemIconTint="@color/color_menu_tint"
             app:itemRippleColor="?colorPrimary"
-            app:itemTextAppearanceActive="@style/AppearanceFoundation.Tiny.Bold"
-            app:itemTextAppearanceInactive="@style/AppearanceFoundation.Tiny.Bold"
+            app:itemTextAppearanceActive="@style/TextAppearance.Foundation.Tiny.Bold"
+            app:itemTextAppearanceInactive="@style/TextAppearance.Foundation.Tiny.Bold"
             app:itemTextColor="@color/color_menu_tint"
             app:labelVisibilityMode="labeled"
             app:menu="@menu/menu_bottom_nav" />

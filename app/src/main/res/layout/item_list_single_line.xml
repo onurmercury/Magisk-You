@@ -27,7 +27,7 @@
         android:paddingEnd="@dimen/l1"
         android:paddingBottom="@dimen/l_75"
         android:text="@{item.item}"
-        android:textAppearance="@style/AppearanceFoundation.Body"
+        android:textAppearance="@style/TextAppearance.Foundation.Body"
         tools:text="@tools:sample/lorem" />
 
 </layout>
