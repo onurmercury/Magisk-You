@@ -6,20 +6,12 @@
         <item name="android:textColor">?attr/colorOnSurface</item>
     </style>
 
-    <style name="TextAppearance.Foundation.Large.Secondary">
-        <item name="android:textColor">?colorSecondary</item>
-    </style>
-
     <!--endregion-->
 
     <!--region Title-->
     <style name="TextAppearance.Foundation.Title" parent="TextAppearance.AppCompat.Title">
         <item name="android:textColor">?attr/colorOnSurface</item>
         <item name="android:textStyle">bold</item>
-    </style>
-
-    <style name="TextAppearance.Foundation.Title.OnPrimary">
-        <item name="android:textColor">?attr/colorOnPrimary</item>
     </style>
 
     <!--endregion-->
@@ -40,24 +32,12 @@
         <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
     </style>
 
-    <style name="TextAppearance.Foundation.Caption.Primary">
-        <item name="android:textColor">?attr/colorPrimary</item>
-    </style>
-
-    <style name="TextAppearance.Foundation.Caption.OnPrimary">
-        <item name="android:textColor">?attr/colorOnPrimary</item>
-    </style>
-
     <!--endregion-->
 
     <!--region Tiny-->
     <style name="TextAppearance.Foundation.Tiny" parent="TextAppearance.AppCompat.Caption">
         <item name="android:textColor">?attr/colorOnSurface</item>
         <item name="android:textSize">11sp</item>
-    </style>
-
-    <style name="TextAppearance.Foundation.Tiny.Bold">
-        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="TextAppearance.Foundation.Tiny.Variant">

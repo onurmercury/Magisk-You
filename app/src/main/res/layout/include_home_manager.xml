@@ -32,11 +32,12 @@
 
             <ImageView
                 android:id="@+id/home_manager_icon"
-                style="@style/View.Icon.Primary"
+                style="@style/View.Icon"
                 android:padding="@dimen/l_50"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_manager" />
+                app:srcCompat="@drawable/ic_manager"
+                app:tint="@color/color_primary_transient" />
 
             <TextView
                 android:id="@+id/home_manager_title"

@@ -187,7 +187,7 @@
                     android:layout_marginEnd="@dimen/l_50"
                     android:fontFamily="sans-serif-medium"
                     android:text="@{item.noticeText}"
-                    android:textAppearance="@style/TextAppearance.Foundation.Caption.Primary"
+                    android:textAppearance="@style/TextAppearance.Foundation.Caption"
                     android:textColor="?colorError"
                     app:layout_constraintBottom_toBottomOf="@+id/module_remove"
                     app:layout_constraintEnd_toStartOf="@+id/bottom_bar_barrier"
