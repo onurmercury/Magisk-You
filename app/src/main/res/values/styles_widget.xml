@@ -53,9 +53,9 @@
         <item name="android:indeterminateTint">?colorPrimary</item>
     </style>
 
-    <style name="Widget.Foundation.PopupMenu" parent="Widget.MaterialComponents.PopupMenu">
-        <item name="android:itemTextAppearance">@style/TextAppearance.Foundation.Caption</item>
-        <item name="android:textStyle">bold</item>
+    <style name="Widget.Foundation.PopupMenu" parent="Widget.Material3.PopupMenu">
+        <item name="android:itemBackground">?colorSurfaceContainer</item>
+        <item name="android:itemTextAppearance">@style/TextAppearance.Foundation.Body</item>
     </style>
 
 </resources>
