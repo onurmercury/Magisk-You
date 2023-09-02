@@ -27,6 +27,7 @@ class ManagerInstallDialog : MarkDownDialog() {
         super.build(dialog)
         dialog.apply {
             setCancelable(true)
+            setTitle(R.string.magisk)
             setButton(MagiskDialog.ButtonType.POSITIVE) {
                 text = R.string.install
                 onClick { DownloadService.start(activity, Subject.App()) }
