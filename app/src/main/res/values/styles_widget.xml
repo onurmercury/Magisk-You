@@ -10,23 +10,29 @@
 
 
     <style name="Widget.Foundation.Button" parent="Widget.Material3.Button">
-        <item name="android:paddingStart">20dp</item>
-        <item name="android:paddingEnd">20dp</item>
+        <item name="android:minWidth">@dimen/l4</item>
+        <item name="android:paddingStart">@dimen/l1</item>
+        <item name="android:paddingEnd">@dimen/l1</item>
         <item name="android:textStyle">bold</item>
         <item name="iconGravity">textStart</item>
+        <item name="iconPadding">6dp</item>
     </style>
 
     <style name="Widget.Foundation.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
-        <item name="android:paddingStart">20dp</item>
-        <item name="android:paddingEnd">20dp</item>
+        <item name="android:minWidth">@dimen/l4</item>
+        <item name="android:paddingStart">@dimen/l1</item>
+        <item name="android:paddingEnd">@dimen/l1</item>
         <item name="android:textStyle">bold</item>
         <item name="iconGravity">textStart</item>
+        <item name="iconPadding">6dp</item>
         <item name="strokeColor" tools:ignore="PrivateResource">@color/m3_text_button_foreground_color_selector</item>
     </style>
 
     <style name="Widget.Foundation.Button.Text" parent="Widget.Material3.Button.TextButton">
+        <item name="android:minWidth">@dimen/l4</item>
         <item name="android:textStyle">bold</item>
         <item name="iconGravity">textStart</item>
+        <item name="iconPadding">6dp</item>
     </style>
 
 
