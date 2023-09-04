@@ -21,26 +21,27 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_begin="16dp" />
+            app:layout_constraintGuide_begin="@dimen/l1_50" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/dialog_base_end"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_end="16dp" />
+            app:layout_constraintGuide_end="@dimen/l1_50" />
 
         <ImageView
             android:id="@+id/dialog_base_icon"
             style="@style/View.Image.Big"
             gone="@{data.icon == null}"
             android:layout_gravity="center"
-            android:layout_marginTop="@dimen/l1"
+            android:layout_marginTop="@dimen/l1_50"
             android:src="@{data.icon}"
             app:layout_constraintBottom_toTopOf="@+id/dialog_base_title"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:tint="?colorSecondary"
             tools:src="@drawable/ic_delete" />
 
         <TextView
@@ -48,8 +49,8 @@
             gone="@{data.title.length == 0}"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/l1"
-            android:gravity="center"
+            android:paddingTop="@dimen/l1_50"
+            android:paddingBottom="@dimen/l1"
             android:text="@{data.title}"
             android:textAppearance="@style/TextAppearance.Foundation.Title"
             app:layout_constraintEnd_toEndOf="@+id/dialog_base_end"
@@ -61,10 +62,10 @@
         <androidx.core.widget.NestedScrollView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/l_50"
+            android:paddingTop="@{data.title.length == 0 ? @dimen/l1_50 : 0}"
             android:overScrollMode="ifContentScrolls"
             app:layout_constrainedHeight="true"
-            app:layout_constraintBottom_toTopOf="@+id/dialog_base_space"
+            app:layout_constraintBottom_toTopOf="@+id/dialog_base_buttons"
             app:layout_constraintEnd_toEndOf="@+id/dialog_base_end"
             app:layout_constraintStart_toStartOf="@+id/dialog_base_start"
             app:layout_constraintTop_toBottomOf="@+id/dialog_base_title">
@@ -77,9 +78,9 @@
                     android:id="@+id/dialog_base_message"
                     gone="@{data.message.length == 0}"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:text="@{data.message}"
-                    android:textAppearance="@style/TextAppearance.Foundation.Body"
+                    android:textAppearance="@style/TextAppearance.Foundation.Body.Variant"
                     tools:lines="3"
                     tools:text="@tools:sample/lorem/random" />
 
@@ -93,14 +94,6 @@
 
         </androidx.core.widget.NestedScrollView>
 
-        <Space
-            android:id="@+id/dialog_base_space"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/l_50"
-            app:layout_constraintBottom_toTopOf="@+id/dialog_base_buttons"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
         <androidx.appcompat.widget.ButtonBarLayout
             android:id="@+id/dialog_base_buttons"
             android:layout_width="0dp"
@@ -108,10 +101,7 @@
             android:gravity="bottom|center_horizontal"
             android:layoutDirection="locale"
             android:orientation="horizontal"
-            android:paddingStart="12dp"
-            android:paddingTop="4dp"
-            android:paddingEnd="12dp"
-            android:paddingBottom="4dp"
+            android:padding="@dimen/l1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
