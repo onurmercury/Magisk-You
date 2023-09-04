@@ -1,47 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!--region Display-->
-    <style name="TextAppearance.Foundation.Large" parent="TextAppearance.AppCompat.Large">
-        <item name="android:textColor">?attr/colorOnSurface</item>
-    </style>
-
-    <!--endregion-->
-
     <!--region Title-->
-    <style name="TextAppearance.Foundation.Title" parent="TextAppearance.AppCompat.Title">
-        <item name="android:textColor">?attr/colorOnSurface</item>
-        <item name="android:textStyle">bold</item>
+    <style name="TextAppearance.Foundation.Title" parent="TextAppearance.Material3.TitleLarge" />
+
+    <style name="TextAppearance.Foundation.Title.Variant">
+        <item name="android:textColor">?android:textColorSecondary</item>
     </style>
 
     <!--endregion-->
 
     <!--region Body-->
-    <style name="TextAppearance.Foundation.Body" parent="TextAppearance.AppCompat.Body1">
-        <item name="android:textColor">?attr/colorOnSurface</item>
+    <style name="TextAppearance.Foundation.Body" parent="TextAppearance.Material3.BodyMedium" />
+
+    <style name="TextAppearance.Foundation.Body.Variant">
+        <item name="android:textColor">?android:textColorSecondary</item>
     </style>
 
     <!--endregion-->
 
     <!--region Caption-->
-    <style name="TextAppearance.Foundation.Caption" parent="TextAppearance.AppCompat.Caption">
-        <item name="android:textColor">?attr/colorOnSurface</item>
+    <style name="TextAppearance.Foundation.Caption" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textColor">?android:textColorPrimary</item>
     </style>
 
     <style name="TextAppearance.Foundation.Caption.Variant">
-        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
     </style>
 
     <!--endregion-->
 
     <!--region Tiny-->
-    <style name="TextAppearance.Foundation.Tiny" parent="TextAppearance.AppCompat.Caption">
-        <item name="android:textColor">?attr/colorOnSurface</item>
+    <style name="TextAppearance.Foundation.Tiny" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textColor">?android:textColorPrimary</item>
         <item name="android:textSize">11sp</item>
     </style>
 
     <style name="TextAppearance.Foundation.Tiny.Variant">
-        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
     </style>
 
     <!--endregion-->
