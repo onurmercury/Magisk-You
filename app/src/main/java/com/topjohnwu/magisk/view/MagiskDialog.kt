@@ -131,15 +131,16 @@ class MagiskDialog(
         super.setContentView(binding.root)
 
         val surfaceColor = MaterialColors.getColor(context, com.google.android.material.R.attr.colorSurface, javaClass.canonicalName)
-        val materialShapeDrawable = MaterialShapeDrawable(context, null, androidx.appcompat.R.attr.alertDialogStyle, com.google.android.material.R.style.MaterialAlertDialog_MaterialComponents)
+        val materialShapeDrawable = MaterialShapeDrawable(context, null, com.google.android.material.R.attr.alertDialogStyle, com.google.android.material.R.style.MaterialAlertDialog_Material3)
         materialShapeDrawable.initializeElevationOverlay(context)
         materialShapeDrawable.fillColor = ColorStateList.valueOf(surfaceColor)
-        materialShapeDrawable.elevation = context.resources.getDimension(R.dimen.margin_generic)
-        materialShapeDrawable.setCornerSize(context.resources.getDimension(R.dimen.l_50))
+        materialShapeDrawable.elevation = context.resources.getDimension(R.dimen.alert_dialog_elevation)
+        materialShapeDrawable.setCornerSize(context.resources.getDimension(R.dimen.l1_75))
 
-        val inset = context.resources.getDimensionPixelSize(com.google.android.material.R.dimen.appcompat_dialog_background_inset)
+        val insetTopBottom = context.resources.getDimensionPixelSize(com.google.android.material.R.dimen.mtrl_alert_dialog_background_inset_top)
+        val insetStartEnd = context.resources.getDimensionPixelSize(R.dimen.alert_dialog_background_inset_start)
         window?.apply {
-            setBackgroundDrawable(InsetDrawable(materialShapeDrawable, inset, inset, inset, inset))
+            setBackgroundDrawable(InsetDrawable(materialShapeDrawable, insetStartEnd, insetTopBottom, insetStartEnd, insetTopBottom))
             setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
         }
     }
