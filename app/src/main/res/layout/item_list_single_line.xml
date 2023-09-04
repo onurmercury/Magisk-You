@@ -22,12 +22,12 @@
         android:clickable="true"
         android:focusable="true"
         android:onClick="@{() -> listener.onClick(item.position)}"
-        android:paddingStart="@dimen/l1"
-        android:paddingTop="@dimen/l_75"
-        android:paddingEnd="@dimen/l1"
-        android:paddingBottom="@dimen/l_75"
+        android:paddingTop="@dimen/l1"
+        android:paddingBottom="@dimen/l1"
+        android:paddingStart="@dimen/l_50"
+        android:paddingEnd="@dimen/l_50"
         android:text="@{item.item}"
-        android:textAppearance="@style/TextAppearance.Foundation.Body"
+        android:textAppearance="@style/TextAppearance.Foundation.Body.Variant"
         tools:text="@tools:sample/lorem" />
 
 </layout>
