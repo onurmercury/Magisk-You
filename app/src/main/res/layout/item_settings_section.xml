@@ -15,26 +15,29 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingTop="@dimen/l1"
-        android:paddingBottom="@dimen/l_50">
+        android:paddingBottom="@dimen/l_50"
+        tools:paddingStart="@dimen/l1"
+        tools:paddingEnd="@dimen/l1">
 
         <TextView
             gone="@{item.title.empty}"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingBottom="@{!item.description.empty ? @dimen/l_125 : 0}"
             android:text="@{item.title}"
-            android:textAppearance="@style/TextAppearance.Foundation.Large"
+            android:textAppearance="@style/TextAppearance.Foundation.Title"
             android:textColor="?colorSecondary"
-            android:textStyle="bold"
-            tools:text="@tools:sample/lorem" />
+            tools:text="@tools:sample/lorem"
+            tools:paddingBottom="@dimen/l_125" />
 
         <TextView
             gone="@{item.description.empty}"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@{item.description}"
-            android:textAppearance="@style/TextAppearance.Foundation.Tiny"
-            android:textStyle="bold"
-            tools:text="@tools:sample/lorem/random" />
+            android:textAppearance="@style/TextAppearance.Foundation.Caption.Variant"
+            tools:text="@tools:sample/lorem/random"
+            tools:maxLines="2"/>
 
     </LinearLayout>
 
