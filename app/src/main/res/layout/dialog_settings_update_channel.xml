@@ -15,19 +15,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="@dimen/margin_generic">
+        android:paddingTop="@dimen/l_50"
+        android:paddingBottom="@dimen/l_50"
+        tools:padding="@dimen/l1_50">
 
         <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_generic"
             android:hint="@string/settings_update_custom_msg"
-            app:boxStrokeColor="?colorOnSurfaceVariant"
-            app:errorTextColor="?colorError"
-            app:hintEnabled="true"
-            app:hintTextAppearance="@style/TextAppearance.Foundation.Tiny"
-            app:hintTextColor="?colorOnSurfaceVariant">
+            app:hintEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/dialog_custom_download_text"
@@ -35,8 +32,6 @@
                 android:layout_height="wrap_content"
                 android:inputType="textUri"
                 android:text="@={data.inputResult}"
-                android:textAppearance="@style/TextAppearance.Foundation.Body"
-                android:textColor="?colorOnSurface"
                 tools:text="@tools:sample/lorem" />
 
         </com.google.android.material.textfield.TextInputLayout>
