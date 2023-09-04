@@ -25,4 +25,7 @@
 
     <dimen name="bottom_navigation_bar_size">@dimen/m3_bottom_nav_min_height</dimen>
 
+    <dimen name="alert_dialog_background_inset_start">34dp</dimen>
+    <dimen name="alert_dialog_elevation">@dimen/m3_alert_dialog_elevation</dimen>
+
 </resources>
