@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ThemeOverlay.Button.Text.Secondary" parent="">
+        <item name="colorPrimary">?colorSecondary</item>
+    </style>
+
+
+    <style name="ThemeOverlay.Foundation.Dialog" parent="ThemeOverlay.Material3.Dialog">
+        <item name="android:windowMinWidthMajor">@dimen/abc_dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@dimen/abc_dialog_min_width_minor</item>
+    </style>
+
+</resources>
