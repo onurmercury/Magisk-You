@@ -1,5 +1,6 @@
 package com.topjohnwu.magisk.ui.theme
 
+import android.os.Build
 import android.os.Bundle
 import android.view.ContextThemeWrapper
 import android.view.LayoutInflater
@@ -43,7 +44,9 @@ class ThemeFragment : BaseFragment<FragmentThemeBinding>() {
             val right = c.findViewById<FrameLayout>(R.id.right)
 
             for ((theme, view) in listOf(a to left, b to right)) {
-                theme ?: continue
+                if (theme == null || Build.VERSION.SDK_INT < Build.VERSION_CODES.S &&
+                    theme in listOf(Theme.Dynamic, Theme.DynamicBlack))
+                    continue
                 val themed = ContextThemeWrapper(activity, theme.themeRes)
                 ItemThemeBindingImpl.inflate(LayoutInflater.from(themed), view, true).also {
                     it.setVariable(BR.viewModel, viewModel)
