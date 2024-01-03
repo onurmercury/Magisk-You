@@ -4,6 +4,7 @@ plugins {
     kotlin("plugin.parcelize")
     kotlin("kapt")
     id("androidx.navigation.safeargs.kotlin")
+    id("dev.rikka.tools.materialthemebuilder")
 }
 
 kapt {
@@ -65,6 +66,43 @@ setupApp()
 configurations.all {
     exclude("org.jetbrains.kotlin", "kotlin-stdlib-jdk7")
     exclude("org.jetbrains.kotlin", "kotlin-stdlib-jdk8")
+}
+
+materialThemeBuilder {
+    themes {
+        for ((name, color) in listOf(
+            "Piplup" to "4EAFF5",
+            "Rayquaza" to "68A17F",
+            "Zapdos" to "F2B90D",
+            "Charmeleon" to "DB7366",
+            "Mew" to "B3566C",
+            "Salamence" to "70B2C6",
+            "Fraxure" to "009688"
+        )) {
+            create(name) {
+                lightThemeFormat = "Theme.Foundation.Light.%s"
+                lightThemeParent = "Theme.Foundation"
+                darkThemeFormat = "Theme.Foundation.Dark.%s"
+                darkThemeParent = "Theme.Foundation"
+                primaryColor = "#$color"
+            }
+        }
+    }
+
+    // Optional parts:
+
+    // Add Material Design 3 color tokens (such as palettePrimary100) in generated theme
+    // rikka.material:material >= 2.0.0 provides such attributes
+    // Enable this if your are using rikka.material:material
+    generatePalette = false
+
+    // Generate Material Design 3 color tokens attributes (such as palettePrimary100)
+    // When necessary, you can use this if your are not using rikka.material:material
+    generatePaletteAttributes = false
+
+    // Generate "textColorOnXxx" attributes such as "textColorOnPrimary", "textColorOnPrimaryHighEmphasis"
+    // and "textColorOnPrimaryMediumEmphasis"
+    generateTextColors = true
 }
 
 dependencies {
