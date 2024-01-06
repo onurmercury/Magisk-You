@@ -51,7 +51,6 @@
     <string name="flash_screen_title">Yükleniyor</string>
 
     <!--Superuser-->
-    <string name="su_request_title">Süper Kullanıcı İsteği</string>
     <string name="touch_filtered_warning">Bir uygulama bir Süper Kullanıcı isteğini engellediği için Magisk yanıtınızı doğrulayamıyor</string>
     <string name="deny">Reddet</string>
     <string name="prompt">Hemen</string>

@@ -5,4 +5,7 @@
         <attr name="state_hidden" format="boolean" />
     </declare-styleable>
 
+    <attr name="suRequestBackground" format="reference|color" />
+    <attr name="suRequestButtonBackground" format="reference|color" />
+
 </resources>
