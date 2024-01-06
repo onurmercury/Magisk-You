@@ -51,7 +51,6 @@
     <string name="flash_screen_title">Quraşdırılma</string>
 
     <!--Superuser-->
-    <string name="su_request_title">Superuser İstəyi</string>
     <string name="touch_filtered_warning">Hansısa tətbiq Superuser istəyini pozduğuna görə, Magisk göstərişinizi yerinə yetirə bilmir</string>
     <string name="deny">İmtina et</string>
     <string name="prompt">İstək</string>

@@ -51,7 +51,6 @@
     <string name="flash_screen_title">Įdiegimas</string>
 
     <!--Superuser-->
-    <string name="su_request_title">Supernaudotojo užklausa</string>
     <string name="touch_filtered_warning">Programėlė užstoja supernaudotojo užklausą, todėl Magisk negali patvirtinti jūsų atsakymo</string>
     <string name="deny">Atmesti</string>
     <string name="prompt">Klausti</string>

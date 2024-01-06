@@ -51,7 +51,6 @@
     <string name="flash_screen_title">Инсталиране</string>
 
     <!--Superuser-->
-    <string name="su_request_title">Запитване за достъп</string>
     <string name="touch_filtered_warning">Тъй като друго приложение закрива заявката за достъп до правата на суперпотребителя, Magisk не може да потвърди вашия отговор</string>
     <string name="deny">Отказ</string>
     <string name="prompt">Запитване</string>
