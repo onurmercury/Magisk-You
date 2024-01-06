@@ -4,6 +4,8 @@
     <!-- Dark theme specific variables -->
     <style name="Base.Theme.Foundation.Dark" parent="Theme.Material3.DynamicColors.Dark">
         <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="suRequestBackground">#FF3C4043</item>
+        <item name="suRequestButtonBackground">?colorOnPrimaryContainer</item>
     </style>
 
     <style name="Base.Theme.Foundation" parent="Base.Theme.Foundation.Dark" />
