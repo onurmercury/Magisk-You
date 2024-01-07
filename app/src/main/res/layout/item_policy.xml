@@ -16,7 +16,7 @@
         style="@style/Widget.Foundation.Card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:alpha="@{item.enabled ? 1f : .5f}"
+        android:alpha="@{item.enabled ? 1f : .6f}"
         android:focusable="true"
         android:nextFocusRight="@id/policy_indicator"
         android:onClick="@{() -> item.toggleExpand()}">

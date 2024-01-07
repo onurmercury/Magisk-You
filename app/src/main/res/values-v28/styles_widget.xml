@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.V28.Widget.Foundation.Card" parent="Base.Widget.Foundation.Card">
+        <!-- Empty the android:outlineProvider because it removes corner boundaries. -->
+        <item name="android:outlineProvider" />
+        <!-- Use transparent shadows instead. -->
+        <item name="android:outlineAmbientShadowColor">@android:color/transparent</item>
+        <item name="android:outlineSpotShadowColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Widget.Foundation.Card" parent="Base.V28.Widget.Foundation.Card" />
+
+    <!-- No need to create an alternative style for API 28 & above. -->
+    <style name="Widget.Foundation.Card.Variant" />
+
+</resources>

@@ -137,7 +137,7 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/theme_navigation"
-                style="@style/Widget.Foundation.Card.Elevated"
+                style="@style/Widget.Foundation.Card"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/l1"

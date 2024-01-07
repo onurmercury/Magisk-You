@@ -20,7 +20,7 @@
         isEnabled="@{item.enabled}"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:alpha="@{item.enabled ? 1f : .5f}"
+        android:alpha="@{item.enabled ? 1f : .6f}"
         android:clickable="@{item.enabled}"
         android:focusable="@{item.enabled}"
         android:onClick="@{(view) -> item.onPressed(view, handler)}"
