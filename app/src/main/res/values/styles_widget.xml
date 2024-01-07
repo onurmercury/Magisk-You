@@ -4,9 +4,20 @@
     <style name="Widget.Foundation" parent="android:Widget" />
 
 
-    <style name="Widget.Foundation.Card" parent="Widget.Material3.CardView.Filled" />
+    <style name="Base.Widget.Foundation.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardElevation">@dimen/l_25</item>
+        <!-- Use android:outlineProvider=none to remove shadows for API 27 & below. -->
+        <item name="android:outlineProvider">none</item>
+    </style>
 
-    <style name="Widget.Foundation.Card.Elevated" parent="Widget.Material3.CardView.Elevated" />
+    <style name="Widget.Foundation.Card" parent="Base.Widget.Foundation.Card" />
+
+    <!-- Create an alternative style for layouts like "item_hide" as they need
+    corner boundaries, which are removed with android:outlineProvider=none. -->
+    <style name="Widget.Foundation.Card.Variant">
+        <!-- Empty the android:outlineProvider. -->
+        <item name="android:outlineProvider" />
+    </style>
 
 
     <style name="Widget.Foundation.Button" parent="Widget.Material3.Button">
