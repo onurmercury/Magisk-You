@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <item
-        android:id="@+id/homeFragment"
-        android:icon="@drawable/ic_home"
-        android:title="@string/section_home"
+        android:id="@+id/logFragment"
+        android:icon="@drawable/ic_bug"
+        android:title="@string/logs"
         tools:showAsAction="always" />
 
     <item
@@ -15,15 +15,21 @@
         tools:showAsAction="always" />
 
     <item
-        android:id="@+id/logFragment"
-        android:icon="@drawable/ic_bug"
-        android:title="@string/logs"
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:title="@string/section_home"
         tools:showAsAction="always" />
 
     <item
         android:id="@+id/modulesFragment"
         android:icon="@drawable/ic_module"
         android:title="@string/modules"
+        tools:showAsAction="always" />
+
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/settings"
         tools:showAsAction="always" />
 
 </menu>

@@ -76,6 +76,7 @@ class MainActivity : SplashActivity<ActivityMainBinding>() {
         navigation.addOnDestinationChangedListener { _, destination, _ ->
             isRootFragment = when (destination.id) {
                 R.id.homeFragment,
+                R.id.settingsFragment,
                 R.id.modulesFragment,
                 R.id.superuserFragment,
                 R.id.logFragment -> true
@@ -154,7 +155,7 @@ class MainActivity : SplashActivity<ActivityMainBinding>() {
         return when (name) {
             Const.Nav.SUPERUSER -> MainDirections.actionSuperuserFragment()
             Const.Nav.MODULES -> MainDirections.actionModuleFragment()
-            Const.Nav.SETTINGS -> HomeFragmentDirections.actionHomeFragmentToSettingsFragment()
+            Const.Nav.SETTINGS -> MainDirections.actionSettingsFragment()
             else -> null
         }
     }
@@ -162,6 +163,7 @@ class MainActivity : SplashActivity<ActivityMainBinding>() {
     private fun getScreen(id: Int): NavDirections? {
         return when (id) {
             R.id.homeFragment -> MainDirections.actionHomeFragment()
+            R.id.settingsFragment -> MainDirections.actionSettingsFragment()
             R.id.modulesFragment -> MainDirections.actionModuleFragment()
             R.id.superuserFragment -> MainDirections.actionSuperuserFragment()
             R.id.logFragment -> MainDirections.actionLogFragment()
