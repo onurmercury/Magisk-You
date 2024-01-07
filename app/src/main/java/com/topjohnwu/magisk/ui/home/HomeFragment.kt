@@ -66,8 +66,6 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), MenuProvider {
 
     override fun onMenuItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.action_settings ->
-                HomeFragmentDirections.actionHomeFragmentToSettingsFragment().navigate()
             R.id.action_reboot -> activity?.let { RebootMenu.inflate(it).show() }
             else -> return super.onOptionsItemSelected(item)
         }
