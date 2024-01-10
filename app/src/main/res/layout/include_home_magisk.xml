@@ -23,148 +23,242 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingStart="@dimen/l1"
-            android:paddingTop="@dimen/l_50"
-            android:paddingEnd="@dimen/l1"
-            android:paddingBottom="@dimen/l_50"
-            tools:layout_gravity="center">
+            android:layout_height="wrap_content">
 
-            <ImageView
-                android:id="@+id/home_magisk_icon"
-                style="@style/View.Icon"
-                android:padding="@dimen/l_25"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_magisk_outline"
-                app:tint="@color/color_primary_transient" />
-
-            <TextView
-                android:id="@+id/home_magisk_title"
-                android:layout_width="0dp"
+            <LinearLayout
+                android:id="@+id/home_magisk_info"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/l1"
-                android:text="@string/magisk"
-                android:textAppearance="@style/TextAppearance.Foundation.Title"
-                android:textColor="?colorPrimary"
-                android:maxLines="1"
-                android:ellipsize="end"
-                app:layout_constraintBottom_toBottomOf="@+id/home_magisk_icon"
-                app:layout_constraintEnd_toStartOf="@+id/home_magisk_button"
-                app:layout_constraintStart_toEndOf="@+id/home_magisk_icon"
-                app:layout_constraintTop_toTopOf="@+id/home_magisk_icon" />
+                android:layout_margin="@dimen/l1_25"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@id/home_magisk_barrier"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/home_magisk_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/l1"
+                    android:text="@string/magisk"
+                    android:textAppearance="@style/TextAppearance.Foundation.Title"
+                    android:textColor="?colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/l_25"
+                    android:text="@string/home_installed_version"
+                    android:textAppearance="@style/TextAppearance.Foundation.Body.Variant" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/l_50"
+                    android:text="@{viewModel.magiskInstalledVersion}"
+                    android:textAppearance="@style/TextAppearance.Foundation.Body"
+                    android:textStyle="bold"
+                    tools:text="22.0 (22000)" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/l_25"
+                    android:text="@string/zygisk"
+                    android:textAppearance="@style/TextAppearance.Foundation.Body.Variant" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/l_50"
+                    android:text="@{Info.isZygiskEnabled ? @string/yes : @string/no}"
+                    android:textAppearance="@style/TextAppearance.Foundation.Body"
+                    android:textStyle="bold"
+                    tools:text="Yes" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/l_25"
+                    android:text="Ramdisk"
+                    android:textAppearance="@style/TextAppearance.Foundation.Body.Variant"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{Info.ramdisk ? @string/yes : @string/no }"
+                    android:textAppearance="@style/TextAppearance.Foundation.Body"
+                    android:textStyle="bold"
+                    tools:text="Yes" />
+
+            </LinearLayout>
 
             <FrameLayout
                 android:id="@+id/home_magisk_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toBottomOf="@+id/home_magisk_title"
-                app:layout_constraintTop_toTopOf="@+id/home_magisk_title">
+                android:layout_margin="@dimen/l1_25"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
 
                 <Button
                     style="@style/Widget.Foundation.Button"
                     gone="@{viewModel.magiskState != State.OUTDATED}"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="end"
                     android:onClick="@{() -> viewModel.onMagiskPressed()}"
                     android:text="@string/update"
-                    android:layout_gravity="end"
                     app:icon="@drawable/ic_update" />
 
                 <Button
-                    style="@style/Widget.Foundation.Button.Text"
+                    style="@style/Widget.Foundation.Button.Outlined"
                     gone="@{viewModel.magiskState == State.OUTDATED}"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"
                     android:onClick="@{() -> viewModel.onMagiskPressed()}"
-                    android:text="@string/install"
-                    app:icon="@drawable/ic_install"/>
+                    android:text="@string/install" />
 
             </FrameLayout>
 
-            <androidx.constraintlayout.widget.Barrier
-                android:id="@+id/home_magisk_title_barrier"
+            <Button
+                android:id="@+id/home_magisk_uninstall"
+                style="@style/Widget.Foundation.Button.Outlined"
+                goneUnless="@{Info.env.isActive}"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:barrierDirection="bottom"
-                app:referencedIds="@{viewModel.magiskTitleBarrierIds}"
-                tools:constraint_referenced_ids="home_magisk_icon,home_magisk_title,home_magisk_button" />
+                android:layout_margin="@dimen/l1_25"
+                android:onClick="@{() -> viewModel.onDeletePressed()}"
+                android:text="Uninstall"
+                app:layout_constraintBottom_toBottomOf="@id/home_magisk_barrier"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:materialThemeOverlay="@style/ThemeOverlay.Foundation.Button.Text.Error" />
 
-            <HorizontalScrollView
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/home_magisk_barrier"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fadingEdgeLength="@dimen/l1"
-                android:requiresFadingEdge="horizontal"
-                android:scrollbars="none"
-                app:layout_constraintTop_toBottomOf="@+id/home_magisk_title_barrier">
+                app:barrierDirection="bottom" />
 
-                <LinearLayout
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?colorSurface"
+                app:layout_constraintTop_toTopOf="@+id/home_magisk_barrier"
+                app:layout_constraintBottom_toBottomOf="@+id/home_magisk_barrier" />
+
+            <LinearLayout
+                android:id="@+id/home_manager_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/l1_25"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/home_magisk_barrier"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:id="@+id/home_manager_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_marginBottom="@dimen/l1"
+                    android:text="@string/home_app_title"
+                    android:textAppearance="@style/TextAppearance.Foundation.Title"
+                    android:textColor="?colorPrimary" />
 
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/l_25"
+                    android:text="@string/home_latest_version"
+                    android:textAppearance="@style/TextAppearance.Foundation.Body.Variant" />
 
-                        <LinearLayout
-                            android:id="@+id/home_magisk_installed_version"
-                            style="@style/View.Home.Item.Top"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent">
+                <TextView
+                    android:id="@+id/home_manager_latest_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/l_50"
+                    android:text="@{viewModel.managerRemoteVersion}"
+                    android:textAppearance="@style/TextAppearance.Foundation.Body"
+                    android:textStyle="bold"
+                    tools:text="22.0 (22000) (16)" />
 
-                            <TextView
-                                style="@style/View.Home.ItemContent"
-                                android:text="@string/home_installed_version" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/l_25"
+                    android:text="@string/home_installed_version"
+                    android:textAppearance="@style/TextAppearance.Foundation.Body.Variant" />
 
-                            <TextView
-                                style="@style/View.Home.ItemContent.Right"
-                                android:text="@{viewModel.magiskInstalledVersion}"
-                                tools:text="22.0 (22000)" />
+                <TextView
+                    android:id="@+id/home_manager_installed_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/l_50"
+                    android:text="@{viewModel.managerInstalledVersion}"
+                    android:textAppearance="@style/TextAppearance.Foundation.Body"
+                    android:textStyle="bold"
+                    tools:text="22.0 (22000) (16)" />
 
-                        </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/l_25"
+                    android:text="@string/home_package"
+                    android:textAppearance="@style/TextAppearance.Foundation.Body.Variant" />
 
-                        <LinearLayout
-                            android:id="@+id/home_device_details_zygisk"
-                            style="@style/View.Home.Item"
-                            app:layout_constraintStart_toStartOf="@+id/home_magisk_installed_version"
-                            app:layout_constraintTop_toBottomOf="@+id/home_magisk_installed_version">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{context.packageName}"
+                    android:textAppearance="@style/TextAppearance.Foundation.Body"
+                    android:textStyle="bold"
+                    tools:text="com.topjohnwu.magisk" />
 
-                            <TextView
-                                style="@style/View.Home.ItemContent"
-                                android:text="@string/zygisk" />
+            </LinearLayout>
 
-                            <TextView
-                                style="@style/View.Home.ItemContent.Right"
-                                android:text="@{Info.isZygiskEnabled ? @string/yes : @string/no}"
-                                tools:text="Yes" />
+            <FrameLayout
+                android:id="@+id/home_manager_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/l1_25"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/home_magisk_barrier">
 
-                        </LinearLayout>
+                <Button
+                    style="@style/Widget.Foundation.Button"
+                    gone="@{viewModel.appState != State.OUTDATED}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:onClick="@{() -> viewModel.onManagerPressed()}"
+                    android:text="@string/update"
+                    app:icon="@drawable/ic_update" />
 
-                        <LinearLayout
-                            android:id="@+id/home_device_details_ramdisk"
-                            style="@style/View.Home.Item.Bottom"
-                            app:layout_constraintStart_toStartOf="@+id/home_magisk_installed_version"
-                            app:layout_constraintTop_toBottomOf="@+id/home_device_details_zygisk">
+                <Button
+                    style="@style/Widget.Foundation.Button.Outlined"
+                    gone="@{viewModel.appState != State.UP_TO_DATE}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:onClick="@{() -> viewModel.onManagerPressed()}"
+                    android:text="@string/install" />
 
-                            <TextView
-                                style="@style/View.Home.ItemContent"
-                                android:text="Ramdisk" />
+            </FrameLayout>
 
-                            <TextView
-                                style="@style/View.Home.ItemContent.Right"
-                                android:text="@{Info.ramdisk ? @string/yes : @string/no }"
-                                tools:text="Yes" />
-
-                        </LinearLayout>
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                </LinearLayout>
-
-            </HorizontalScrollView>
+            <ProgressBar
+                style="@style/Widget.Foundation.ProgressBar"
+                gone="@{viewModel.stateManagerProgress == 0 || viewModel.stateManagerProgress == 100}"
+                android:layout_width="0dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/l_75"
+                android:max="100"
+                android:progress="@{viewModel.stateManagerProgress}"
+                app:layout_constraintEnd_toEndOf="@+id/home_manager_button"
+                app:layout_constraintStart_toStartOf="@+id/home_manager_button"
+                app:layout_constraintTop_toBottomOf="@+id/home_manager_button" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

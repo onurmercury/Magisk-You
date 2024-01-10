@@ -28,36 +28,6 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), MenuProvider {
         DownloadService.observeProgress(this, viewModel::onProgressUpdate)
     }
 
-    private fun checkTitle(text: TextView, icon: ImageView) {
-        text.post {
-            if (text.layout?.getEllipsisCount(0) != 0) {
-                with (icon) {
-                    layoutParams.width = 0
-                    layoutParams.height = 0
-                    requestLayout()
-                }
-            }
-        }
-    }
-
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        super.onCreateView(inflater, container, savedInstanceState)
-
-        // If titles are squished, hide icons
-        with(binding.homeMagiskWrapper) {
-            checkTitle(homeMagiskTitle, homeMagiskIcon)
-        }
-        with(binding.homeManagerWrapper) {
-            checkTitle(homeManagerTitle, homeManagerIcon)
-        }
-
-        return binding.root
-    }
-
     override fun onCreateMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.menu_home, menu)
         if (!Info.isRooted)
