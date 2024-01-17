@@ -13,7 +13,7 @@
         android:breakStrategy="simple"
         android:hyphenationFrequency="none"
         android:paddingTop="10dp"
-        android:textAppearance="@style/AppearanceFoundation.Caption"
+        android:textAppearance="@style/TextAppearance.Foundation.Caption"
         tools:ignore="UnusedAttribute" />
 
 </ScrollView>

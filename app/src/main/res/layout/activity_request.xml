@@ -33,7 +33,7 @@
                 android:layout_marginBottom="@dimen/l_50"
                 android:gravity="center_horizontal"
                 android:text="@string/su_request_title"
-                android:textAppearance="@style/AppearanceFoundation.Title" />
+                android:textAppearance="@style/TextAppearance.Foundation.Title" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -74,7 +74,7 @@
                         android:maxLines="1"
                         android:minWidth="200dp"
                         android:text="@{viewModel.title}"
-                        android:textAppearance="@style/AppearanceFoundation.Body"
+                        android:textAppearance="@style/TextAppearance.Foundation.Body"
                         android:textStyle="bold"
                         tools:text="Magisk" />
 
@@ -87,7 +87,7 @@
                         android:maxLines="1"
                         android:minWidth="200dp"
                         android:text="@{viewModel.packageName}"
-                        android:textAppearance="@style/AppearanceFoundation.Caption.Variant"
+                        android:textAppearance="@style/TextAppearance.Foundation.Caption.Variant"
                         tools:text="com.topjohnwu.magisk" />
                 </LinearLayout>
             </LinearLayout>
@@ -111,7 +111,7 @@
                 android:layout_margin="@dimen/l1"
                 android:gravity="center"
                 android:text="@string/su_warning"
-                android:textAppearance="@style/AppearanceFoundation.Body"
+                android:textAppearance="@style/TextAppearance.Foundation.Body"
                 android:textColor="?colorError"
                 android:textStyle="bold"
                 tools:text="@string/su_warning" />

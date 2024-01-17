@@ -119,7 +119,7 @@
                     android:layout_width="125dp"
                     android:layout_height="wrap_content"
                     android:text="@{theme.themeName}"
-                    android:textAppearance="@style/AppearanceFoundation.Title.OnPrimary"
+                    android:textAppearance="@style/TextAppearance.Foundation.Title.OnPrimary"
                     android:textStyle="bold"
                     tools:text="Default" />
 

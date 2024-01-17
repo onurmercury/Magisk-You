@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@{@string/settings_download_path_message(data.path)}"
-            android:textAppearance="@style/AppearanceFoundation.Caption"
+            android:textAppearance="@style/TextAppearance.Foundation.Caption"
             tools:text="@string/settings_download_path_message" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -34,7 +34,7 @@
             app:boxStrokeColor="?colorOnSurfaceVariant"
             app:errorTextColor="?colorError"
             app:hintEnabled="true"
-            app:hintTextAppearance="@style/AppearanceFoundation.Tiny"
+            app:hintTextAppearance="@style/TextAppearance.Foundation.Tiny"
             app:hintTextColor="?colorOnSurfaceVariant">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -43,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textUri"
                 android:text="@={data.inputResult}"
-                android:textAppearance="@style/AppearanceFoundation.Body"
+                android:textAppearance="@style/TextAppearance.Foundation.Body"
                 android:textColor="?colorOnSurface"
                 tools:text="@tools:sample/lorem" />
 
