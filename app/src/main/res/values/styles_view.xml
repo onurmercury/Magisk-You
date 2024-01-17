@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="W" parent="android:Widget" />
+    <style name="View" parent="android:Widget" />
 
     <!--region Home-->
 
-    <style name="W.Home" />
+    <style name="View.Home" />
 
-    <style name="W.Home.Item">
+    <style name="View.Home.Item">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">horizontal</item>
@@ -15,22 +15,22 @@
         <item name="android:paddingEnd">@dimen/l1</item>
     </style>
 
-    <style name="W.Home.Item.Top">
+    <style name="View.Home.Item.Top">
         <item name="android:paddingTop">@dimen/l_75</item>
     </style>
 
-    <style name="W.Home.Item.Bottom">
+    <style name="View.Home.Item.Bottom">
         <item name="android:paddingBottom">@dimen/l_75</item>
     </style>
 
-    <style name="W.Home.ItemContent">
+    <style name="View.Home.ItemContent">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:includeFontPadding">false</item>
         <item name="android:textAppearance">@style/AppearanceFoundation.Caption.Variant</item>
     </style>
 
-    <style name="W.Home.ItemContent.Right">
+    <style name="View.Home.ItemContent.Right">
         <item name="android:layout_marginStart">@dimen/l_50</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textAppearance">@style/AppearanceFoundation.Caption</item>
@@ -38,22 +38,22 @@
 
     <!--endregion-->
 
-    <!--region Themes-->
+    <!--region Theme-->
 
-    <style name="W.Theme">
+    <style name="View.Theme">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">@dimen/l1</item>
         <item name="android:layout_weight">1</item>
     </style>
 
-    <style name="W.Theme.Left">
+    <style name="View.Theme.Left">
         <item name="android:layout_marginEnd">@dimen/l1</item>
     </style>
 
-    <style name="W.Theme.Right" />
+    <style name="View.Theme.Right" />
 
-    <style name="W.Theme.Container" parent="">
+    <style name="View.Theme.Container" parent="">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:orientation">horizontal</item>
@@ -61,5 +61,49 @@
     </style>
 
     <!--endregion-->
+
+
+    <!--region Image-->
+
+    <style name="View.Image" parent="">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+    </style>
+
+    <style name="View.Image.Big">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+
+    <style name="View.Image.Small">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+    </style>
+
+    <!--endregion-->
+
+    <!--region Icon-->
+
+    <style name="View.Icon" parent="View.Image.Big">
+        <item name="android:padding">@dimen/l_75</item>
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+        <item name="tint">@color/color_text_transient</item>
+    </style>
+
+    <style name="View.Icon.Primary">
+        <item name="tint">@color/color_primary_transient</item>
+    </style>
+
+    <style name="View.Icon.OnPrimary">
+        <item name="tint">@color/color_on_primary_transient</item>
+    </style>
+
+    <!--endregion-->
+
+    <style name="View.Floating" parent="">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
 
 </resources>

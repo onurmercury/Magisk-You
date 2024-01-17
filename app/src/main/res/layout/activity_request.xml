@@ -47,7 +47,7 @@
 
                 <ImageView
                     android:id="@+id/app_icon"
-                    style="@style/Widget.Foundation.Icon"
+                    style="@style/View.Icon"
                     android:layout_gravity="center_vertical"
                     android:layout_marginStart="@dimen/l_50"
                     android:layout_marginEnd="@dimen/l1"
