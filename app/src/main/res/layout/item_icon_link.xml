@@ -28,7 +28,7 @@
 
         <ImageView
             android:id="@+id/developer_link"
-            style="@style/WidgetFoundation.Image.Small"
+            style="@style/Widget.Foundation.Image.Small"
             android:layout_gravity="center"
             app:srcCompat="@{item.icon}"
             app:tint="?colorOnSurface"

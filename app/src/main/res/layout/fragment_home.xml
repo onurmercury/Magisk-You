@@ -35,7 +35,7 @@
             android:paddingTop="@dimen/l1">
 
             <Button
-                style="@style/WidgetFoundation.Button"
+                style="@style/Widget.Foundation.Button"
                 gone="@{!viewModel.showTest}"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
                 tools:visibility="gone" />
 
             <com.google.android.material.card.MaterialCardView
-                style="@style/WidgetFoundation.Card.Primary"
+                style="@style/Widget.Foundation.Card.Primary"
                 goneUnless="@{viewModel.noticeVisible}"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
 
                     <Button
                         android:id="@+id/home_notice_hide"
-                        style="@style/WidgetFoundation.Button.Text.OnPrimary"
+                        style="@style/Widget.Foundation.Button.Text.OnPrimary"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:onClick="@{() -> viewModel.hideNotice()}"
@@ -113,7 +113,7 @@
                 android:layout_height="@dimen/l1" />
 
             <Button
-                style="@style/WidgetFoundation.Button.Outlined.Error"
+                style="@style/Widget.Foundation.Button.Outlined.Error"
                 goneUnless="@{Info.env.isActive}"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -127,7 +127,7 @@
                 app:icon="@drawable/ic_delete" />
 
             <com.google.android.material.card.MaterialCardView
-                style="@style/WidgetFoundation.Card"
+                style="@style/Widget.Foundation.Card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
@@ -189,7 +189,7 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
-                style="@style/WidgetFoundation.Card"
+                style="@style/Widget.Foundation.Card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
