@@ -44,7 +44,8 @@
             android:visibility="invisible"
             app:cardBackgroundColor="?colorSurface"
             app:cardCornerRadius="0dp"
-            app:cardElevation="0dp">
+            app:cardElevation="0dp"
+            app:strokeWidth="0dp">
 
             <include
                 android:id="@+id/log_filter_superuser"
