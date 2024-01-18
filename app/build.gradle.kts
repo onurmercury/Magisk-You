@@ -4,6 +4,7 @@ plugins {
     kotlin("plugin.parcelize")
     kotlin("kapt")
     id("androidx.navigation.safeargs.kotlin")
+    id("dev.rikka.tools.materialthemebuilder")
 }
 
 kapt {
@@ -65,6 +66,28 @@ setupApp()
 configurations.all {
     exclude("org.jetbrains.kotlin", "kotlin-stdlib-jdk7")
     exclude("org.jetbrains.kotlin", "kotlin-stdlib-jdk8")
+}
+
+materialThemeBuilder {
+    themes {
+        for ((name, color) in listOf(
+            "Piplup" to "4EAFF5",
+            "Rayquaza" to "68A17F",
+            "Zapdos" to "F2B90D",
+            "Charmeleon" to "DB7366",
+            "Mew" to "B3566C",
+            "Salamence" to "70B2C6",
+            "Fraxure" to "009688"
+        )) {
+            create(name) {
+                primaryColor = "#$color"
+                lightThemeParent = "Theme.Foundation"
+                darkThemeParent = "Theme.Foundation"
+                lightThemeFormat = "Theme.Foundation.Light.%s"
+                darkThemeFormat = "Theme.Foundation.Dark.%s"
+            }
+        }
+    }
 }
 
 dependencies {

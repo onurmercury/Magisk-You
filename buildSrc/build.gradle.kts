@@ -21,4 +21,5 @@ dependencies {
     implementation("androidx.navigation:navigation-safe-args-gradle-plugin:2.7.6")
     implementation("org.lsposed.lsparanoid:gradle-plugin:0.5.2")
     implementation("org.eclipse.jgit:org.eclipse.jgit:6.7.0.202309050840-r")
+    implementation("dev.rikka.tools.materialthemebuilder:gradle-plugin:1.4.1")
 }
