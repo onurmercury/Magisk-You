@@ -165,7 +165,7 @@
                             android:layout_height="wrap_content"
                             android:onClick="@{() -> viewModel.install()}"
                             android:text="@string/install_start"
-                            app:icon="@drawable/ic_forth"
+                            app:icon="@drawable/ic_arrow_forward"
                             app:iconGravity="textEnd" />
 
                     </LinearLayout>
