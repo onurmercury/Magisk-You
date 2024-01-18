@@ -73,7 +73,7 @@ object Shortcuts {
                     .setIntent(
                         Intent(intent).putExtra(Const.Key.OPEN_SECTION, Const.Nav.SUPERUSER)
                     )
-                    .setIcon(context.getIcon(R.drawable.sc_superuser))
+                    .setIcon(context.getIcon(R.drawable.sc_numbers))
                     .setRank(0)
                     .build()
             )

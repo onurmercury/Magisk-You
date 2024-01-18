@@ -30,7 +30,7 @@
             android:paddingBottom="56dp"
             app:fitsSystemWindowsInsets="top|bottom"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/item_policy_md2" />
+            tools:listitem="@layout/item_policy" />
 
         <LinearLayout
             goneUnless="@{viewModel.loading}"
