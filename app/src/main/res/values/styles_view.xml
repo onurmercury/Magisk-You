@@ -3,41 +3,6 @@
 
     <style name="View" parent="android:Widget" />
 
-    <!--region Home-->
-
-    <style name="View.Home" />
-
-    <style name="View.Home.Item">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:orientation">horizontal</item>
-        <item name="android:paddingStart">@dimen/l1</item>
-        <item name="android:paddingEnd">@dimen/l1</item>
-    </style>
-
-    <style name="View.Home.Item.Top">
-        <item name="android:paddingTop">@dimen/l_75</item>
-    </style>
-
-    <style name="View.Home.Item.Bottom">
-        <item name="android:paddingBottom">@dimen/l_75</item>
-    </style>
-
-    <style name="View.Home.ItemContent">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:includeFontPadding">false</item>
-        <item name="android:textAppearance">@style/TextAppearance.Foundation.Caption.Variant</item>
-    </style>
-
-    <style name="View.Home.ItemContent.Right">
-        <item name="android:layout_marginStart">@dimen/l_50</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textAppearance">@style/TextAppearance.Foundation.Caption</item>
-    </style>
-
-    <!--endregion-->
-
     <!--region Theme-->
 
     <style name="View.Theme">

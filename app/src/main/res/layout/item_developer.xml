@@ -20,14 +20,15 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:paddingStart="@dimen/l1"
-        android:paddingEnd="@dimen/l1">
+        android:paddingStart="@dimen/l1_25"
+        android:paddingEnd="@dimen/l1_25">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/l_50"
             android:text="@{item.handle}"
-            android:textAppearance="@style/TextAppearance.Foundation.Caption"
+            android:textAppearance="@style/TextAppearance.Foundation.Body.Variant"
             android:textStyle="bold"
             tools:text="\@topjohnwu" />
 
