@@ -23,4 +23,6 @@
 
     <dimen name="r1">8dp</dimen>
 
+    <dimen name="bottom_navigation_bar_size">@dimen/m3_bottom_nav_min_height</dimen>
+
 </resources>

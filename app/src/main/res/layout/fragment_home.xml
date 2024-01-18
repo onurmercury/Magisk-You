@@ -23,7 +23,7 @@
         android:clipToPadding="false"
         android:fillViewport="true"
         android:paddingTop="?actionBarSize"
-        android:paddingBottom="@dimen/l3"
+        android:paddingBottom="@dimen/bottom_navigation_bar_size"
         app:fitsSystemWindowsInsets="top|bottom"
         tools:layout_marginTop="24dp">
 
