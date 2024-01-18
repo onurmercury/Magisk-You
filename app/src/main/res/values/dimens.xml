@@ -21,7 +21,7 @@
     <dimen name="l3_75">60dp</dimen>
     <dimen name="l4">64dp</dimen>
 
-    <dimen name="r1">8dp</dimen>
+    <dimen name="r1">@dimen/l_75</dimen>
 
     <dimen name="bottom_navigation_bar_size">@dimen/m3_bottom_nav_min_height</dimen>
 
