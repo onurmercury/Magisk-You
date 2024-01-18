@@ -33,14 +33,18 @@
     </style>
 
 
-    <style name="Widget.Foundation.Checkbox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+    <style name="Widget.Foundation.Checkbox" parent="Widget.Material3.CompoundButton.CheckBox">
         <item name="android:paddingStart">@dimen/l1</item>
         <item name="android:paddingEnd">@dimen/l1</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
     </style>
 
-    <style name="Widget.Foundation.RadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+    <style name="Widget.Foundation.RadioButton" parent="Widget.Material3.CompoundButton.RadioButton">
         <item name="android:paddingStart">@dimen/l1</item>
         <item name="android:paddingEnd">@dimen/l1</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
     </style>
 
     <style name="Widget.Foundation.ProgressBar" parent="Widget.AppCompat.ProgressBar.Horizontal">
